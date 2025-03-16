@@ -4,7 +4,7 @@ import { Mail, Phone } from "lucide-react";
 const Footer = () => {
   // Function to handle PDF download
   const handleDownload = () => {
-    const pdfPath = "/src/assets/req.pdf"; // Ensure this file is in the public/access folder
+    const pdfPath = "/req.pdf"; // Ensure this file is in the public/access folder
     const link = document.createElement("a");
     link.href = pdfPath;
     link.download = "Request_Quote.pdf"; // Renamed file for download
