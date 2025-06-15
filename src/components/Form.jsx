@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 
 const Form = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    company: "",
-    email: "",
-    phone: "",
+    user_name: "",
+    user_companyname: "",
+    user_email: "",
+    user_phone: "",
     message: "",
   });
 
@@ -26,14 +26,14 @@ const Form = () => {
 
   const validate = () => {
     let errors = {};
-    if (!formData.name) errors.name = "Name is required";
-    if (!formData.company) errors.name = "Company Name is required";
-    if (!formData.email) {
-      errors.email = "Email is required";
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      errors.email = "Email is invalid";
+    if (!formData.user_name) errors.user_name = "Name is required";
+    if (!formData.user_companyname) errors.user_companyname = "Company Name is required";
+    if (!formData.user_email) {
+      errors.user_email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.user_email)) {
+      errors.user_email = "Email is invalid";
     }
-    if (!formData.phone) errors.phone = "Phone is required";
+    if (!formData.user_phone) errors.user_phone = "Phone is required";
     if (!formData.message) errors.message = "Message is required";
     return errors;
   };
@@ -57,10 +57,10 @@ const Form = () => {
           console.log("SUCCESS!", response.status, response.text);
           toast.success("Message sent successfully!");
           setFormData({
-            name: "",
-            company: "",
-            email: "",
-            phone: "",
+            user_name: "",
+            user_companyname: "",
+            user_email: "",
+            user_phone: "",
             message: "",
           });
         })
@@ -124,101 +124,111 @@ const Form = () => {
         >
           <div className="mb-4">
             <label
-              htmlFor="name"
+              htmlFor="user_name"
               className="block text-gray-700 font-medium mb-2"
             >
               NAME <span className="text-red-500">(REQUIRED)</span>
             </label>
             <input
               type="text"
-              id="name"
-              name="name"
-              value={formData.name}
+              id="user_name"
+              name="user_name"
+              value={formData.user_name}
               onChange={handleChange}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               aria-describedby="name-description"
             />
-            {errors.name && (
+            {errors.user_name && (
               <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 aria-live="polite"
                 className="text-sm text-pink-700"
               >
-                {errors.name}
+                {errors.user_name}
               </motion.p>
             )}
           </div>
 
           <div className="mb-4">
             <label
-              htmlFor="company"
+              htmlFor="user_companyname"
               className="block text-gray-700 font-medium mb-2"
             >
               COMPANY NAME <span className="text-red-500">(REQUIRED)</span>
             </label>
             <input
               type="text"
-              id="company"
-              name="company"
-              value={formData.company}
+              id="user_companyname"
+              name="user_companyname"
+              value={formData.user_companyname}
               onChange={handleChange}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
-          </div>
-
-          <div className="mb-4">
-            <label
-              htmlFor="email"
-              className="block text-gray-700 font-medium mb-2"
-            >
-              EMAIL <span className="text-red-500">(REQUIRED)</span>
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              aria-describedby="email-description"
-            />
-            {errors.email && (
+            {errors.user_companyname && (
               <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 aria-live="polite"
                 className="text-sm text-pink-700"
               >
-                {errors.email}
+                {errors.user_companyname}
               </motion.p>
             )}
           </div>
 
           <div className="mb-4">
             <label
-              htmlFor="phone"
+              htmlFor="user_email"
               className="block text-gray-700 font-medium mb-2"
             >
-              PHONE <span className="text-red-500">(REQUIRED)</span>
+              EMAIL <span className="text-red-500">(REQUIRED)</span>
             </label>
             <input
-              type="tel"
-              id="phone"
-              name="phone"
-              value={formData.phone}
+              type="email"
+              id="user_email"
+              name="user_email"
+              value={formData.user_email}
               onChange={handleChange}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              aria-describedby="phone-description"
+              aria-describedby="email-description"
             />
-            {errors.phone && (
+            {errors.user_email && (
               <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 aria-live="polite"
                 className="text-sm text-pink-700"
               >
-                {errors.phone}
+                {errors.user_email}
+              </motion.p>
+            )}
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="user_phone"
+              className="block text-gray-700 font-medium mb-2"
+            >
+              PHONE <span className="text-red-500">(REQUIRED)</span>
+            </label>
+            <input
+              type="tel"
+              id="user_phone"
+              name="user_phone"
+              value={formData.user_phone}
+              onChange={handleChange}
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              aria-describedby="phone-description"
+            />
+            {errors.user_phone && (
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                aria-live="polite"
+                className="text-sm text-pink-700"
+              >
+                {errors.user_phone}
               </motion.p>
             )}
           </div>
