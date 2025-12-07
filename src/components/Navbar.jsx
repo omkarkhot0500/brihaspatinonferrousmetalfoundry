@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { ChevronRight } from "lucide-react";
-import { FaTwitter, FaFacebook, FaLinkedin, FaYoutube, FaWhatsapp } from 'react-icons/fa';
+import {
+  FaTwitter,
+  FaFacebook,
+  FaLinkedin,
+  FaYoutube,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const Navbar = () => {
   const [isFerrousOpen, setIsFerrousOpen] = useState(false);
@@ -8,40 +14,64 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
+      <div className="w-full bg-red-600 text-white py-2 px-4">
+        <div className="container mx-auto flex flex-wrap justify-between items-center">
+          {/* Social Media Links */}
+          <div className="flex space-x-4">
+            <a
+              href="https://twitter.com/meenacast"
+              aria-label="Twitter"
+              className="hover:text-gray-200 transition-colors"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              href="https://facebook.com/meenacast"
+              aria-label="Facebook"
+              className="hover:text-gray-200 transition-colors"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://linkedin.com/company/meenacast"
+              aria-label="LinkedIn"
+              className="hover:text-gray-200 transition-colors"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://youtube.com/meenacast"
+              aria-label="YouTube"
+              className="hover:text-gray-200 transition-colors"
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="https://wa.me/919824234488"
+              aria-label="WhatsApp"
+              className="hover:text-gray-200 transition-colors"
+            >
+              <FaWhatsapp />
+            </a>
+          </div>
 
-
-    <div className="w-full bg-red-600 text-white py-2 px-4">
-      <div className="container mx-auto flex flex-wrap justify-between items-center">
-        {/* Social Media Links */}
-        <div className="flex space-x-4">
-          <a href="https://twitter.com/meenacast" aria-label="Twitter" className="hover:text-gray-200 transition-colors">
-            <FaTwitter />
-          </a>
-          <a href="https://facebook.com/meenacast" aria-label="Facebook" className="hover:text-gray-200 transition-colors">
-            <FaFacebook />
-          </a>
-          <a href="https://linkedin.com/company/meenacast" aria-label="LinkedIn" className="hover:text-gray-200 transition-colors">
-            <FaLinkedin />
-          </a>
-          <a href="https://youtube.com/meenacast" aria-label="YouTube" className="hover:text-gray-200 transition-colors">
-            <FaYoutube />
-          </a>
-          <a href="https://wa.me/919824234488" aria-label="WhatsApp" className="hover:text-gray-200 transition-colors">
-            <FaWhatsapp />
-          </a>
-        </div>
-        
-        {/* Contact Information */}
-        <div className="flex flex-wrap items-center space-x-4 sm:space-x-6">
-          <a href="mailto:info@meenacast.com" className="text-sm sm:text-base hover:text-gray-200 transition-colors">
-            <span className="hidden sm:inline">📧</span> info@meenacast.com
-          </a>
-          <a href="tel:+919824234488" className="text-sm sm:text-base hover:text-gray-200 transition-colors">
-            <span className="hidden sm:inline">📞</span> +91 98242 34488
-          </a>
+          {/* Contact Information */}
+          <div className="flex flex-wrap items-center space-x-4 sm:space-x-6">
+            <a
+              href="mailto:info@meenacast.com"
+              className="text-sm sm:text-base hover:text-gray-200 transition-colors"
+            >
+              <span className="hidden sm:inline">📧</span> info@meenacast.com
+            </a>
+            <a
+              href="tel:+919824234488"
+              className="text-sm sm:text-base hover:text-gray-200 transition-colors"
+            >
+              <span className="hidden sm:inline">📞</span> +91 98242 34488
+            </a>
+          </div>
         </div>
       </div>
-    </div>
       <div className="container mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center mb-4 md:mb-0">
           <img
@@ -64,9 +94,6 @@ const Navbar = () => {
               <ChevronRight className="h-4 w-4 ml-1 transform group-hover:rotate-90 transition-transform" />
             </span>
             <div className="hidden group-hover:block absolute left-0 mt-2 bg-white shadow-lg rounded-md w-48 py-2 z-50">
-              <a href="/about" className="block px-4 py-2 hover:bg-gray-100">
-                Milestones
-              </a>
               <a href="/team" className="block px-4 py-2 hover:bg-gray-100">
                 Our Process
               </a>
@@ -94,7 +121,7 @@ const Navbar = () => {
                   href="/ferrous"
                   className="block px-4 py-2 hover:bg-gray-100"
                 >
-                  Ferrous Metals
+                  Stainless Steel
                 </a>
                 {isFerrousOpen && (
                   <div className="absolute left-full top-0 mt-2 bg-white shadow-lg rounded-md w-48 py-2 z-50">
@@ -102,43 +129,13 @@ const Navbar = () => {
                       href="/ferrous/steel"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
-                      Steel Casting
-                    </a>
-                    <a
-                      href="/ferrous/iron"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      High Chrome Casting
-                    </a>
-                    <a
-                      href="/ferrous/iron"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      Hastelloy Casting
-                    </a>
-                    <a
-                      href="/ferrous/iron"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      Ni Hard Casting
-                    </a>
-                    <a
-                      href="/ferrous/iron"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      Titanium Casting
+                      Stainless Steel Casting
                     </a>
                     <a
                       href="/ferrous/iron"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Nickel Alloy Casting
-                    </a>
-                    <a
-                      href="/ferrous/iron"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      Inconel Casting
                     </a>
                   </div>
                 )}
@@ -152,7 +149,7 @@ const Navbar = () => {
                   href="/non-ferrous"
                   className="block px-4 py-2 hover:bg-gray-100"
                 >
-                  Non-Ferrous Metals
+                  Copper Alloy Casting
                 </a>
                 {isNonFerrousOpen && (
                   <div className="absolute left-full top-0 mt-2 bg-white shadow-lg rounded-md w-48 py-2 z-50">
