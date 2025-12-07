@@ -157,19 +157,13 @@ const Navbar = () => {
                       href="/non-ferrous/aluminum"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
-                      Aluminum Casting
+                      Copper Alloy Casting
                     </a>
                     <a
                       href="/non-ferrous/copper"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Bronze Casting
-                    </a>
-                    <a
-                      href="/non-ferrous/copper"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      Copper Alloy Casting
                     </a>
                   </div>
                 )}
