@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import { ChevronLeft, ChevronRight, Mail, Phone } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Img1 from "../assets/1.jpg";
 import Img2 from "../assets/2.jpg";
 
@@ -68,118 +68,120 @@ const Homepage = () => {
           content="https://brishpathi.com/images/logo.png"
         />
       </Helmet>
-      {/* Hero Slider */}
-      <section className="relative h-[500px] md:h-[600px] overflow-hidden">
+
+      {/* HERO SLIDER */}
+      <section className="relative min-h-[520px] md:min-h-[640px] overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
+            className={`absolute inset-0 transition-opacity duration-1000 ease-out ${
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
           >
-            {/* Title above the image */}
-            <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center px-6">
-              <h1 className="text-4xl md:text-6xl font-bold text-white max-w-4xl mb-6">
-                {slide.title}
-              </h1>
-              <p className="text-xl text-white max-w-2xl">
-                {slide.description}
-              </p>
-            </div>
-
-            {/* Background image with overlay */}
+            {/* Background image + gradient overlay */}
             <div
-              className="absolute inset-0 bg-center bg-cover bg-no-repeat z-0"
+              className="absolute inset-0 bg-center bg-cover bg-no-repeat scale-105 transform-gpu transition-transform duration-[2000ms]"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/70 to-slate-900/40" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/40" />
+            </div>
+
+            {/* Content */}
+            <div className="relative z-10 h-full flex items-center justify-center">
+              <div className="max-w-5xl mx-auto px-6 text-center">
+                <p className="mb-4 inline-block rounded-full border border-amber-400/40 bg-black/40 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-amber-200/90">
+                  Precision · Reliability · Quality
+                </p>
+                <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-[0_6px_25px_rgba(0,0,0,0.75)]">
+                  {slide.title}
+                </h1>
+                <p className="mt-5 text-base sm:text-lg md:text-xl text-slate-200/90 max-w-2xl mx-auto leading-relaxed">
+                  {slide.description}
+                </p>
+                {/* Buttons removed as requested */}
+              </div>
             </div>
           </div>
         ))}
 
+        {/* Slider controls */}
         <button
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 rounded-full p-2 text-white z-20"
+          className="group absolute left-4 top-1/2 flex -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-black/30 p-2 text-white backdrop-blur-md transition-all duration-200 hover:bg-black/60 hover:scale-105"
           aria-label="Previous slide"
         >
-          <ChevronLeft className="h-6 w-6" />
+          <ChevronLeft className="h-6 w-6 group-hover:-translate-x-0.5 transition-transform" />
         </button>
 
         <button
           onClick={nextSlide}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 rounded-full p-2 text-white z-20"
+          className="group absolute right-4 top-1/2 flex -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-black/30 p-2 text-white backdrop-blur-md transition-all duration-200 hover:bg-black/60 hover:scale-105"
           aria-label="Next slide"
         >
-          <ChevronRight className="h-6 w-6" />
+          <ChevronRight className="h-6 w-6 group-hover:translate-x-0.5 transition-transform" />
         </button>
+
+        {/* Slider dots */}
+        <div className="absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 gap-2">
+          {slides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrentSlide(i)}
+              className={`h-2.5 rounded-full transition-all duration-300 ${
+                i === currentSlide
+                  ? "w-8 bg-amber-400 shadow-[0_0_12px_rgba(251,191,36,0.8)]"
+                  : "w-2.5 bg-white/40 hover:bg-white/70"
+              }`}
+              aria-label={`Slide ${i + 1}`}
+            />
+          ))}
+        </div>
       </section>
-      {/* Quality Banner */}
-      <section className="bg-red-600 py-6 md:py-8">
+
+      {/* QUALITY BANNER */}
+      <section className="bg-gradient-to-r from-amber-700 via-amber-600 to-amber-700 py-6 md:py-8 shadow-inner">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-semibold text-white text-center">
+          <h2 className="text-2xl md:text-3xl font-semibold text-white text-center tracking-tight">
             Get Products to Perfection with Severe Quality Control Applied at
-            all the Levels!
+            All Levels
           </h2>
         </div>
       </section>
-      {/* Company Info Section */}
-      <section className="py-12 md:py-16 bg-gray-50">
+
+      {/* COMPANY INFO */}
+      <section className="py-12 md:py-16 bg-gradient-to-b from-slate-50 to-slate-100">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Company Profile Card */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="px-6 py-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
+          <div className="md:grid-cols-2 gap-8">
+            <div className="relative overflow-hidden rounded-2xl border border-white/70 bg-white/90 shadow-xl shadow-slate-400/20 backdrop-blur">
+              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500" />
+              <div className="px-6 py-8 md:px-8 md:py-10">
+                <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6 text-center">
                   Company Profile
                 </h2>
                 <div className="flex flex-col md:flex-row items-start gap-6">
-                  <img
-                    src="/images/company-building.jpg"
-                    alt="brishpathi Cast Facility"
-                    className="w-full md:w-1/3 rounded-lg object-cover"
-                  />
+                  <div className="w-full md:w-1/3 overflow-hidden rounded-xl">
+                    <img
+                      src="/images/company-building.jpg"
+                      alt="brishpathi Cast Facility"
+                      className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                  </div>
                   <div>
-                    <p className="text-gray-600 mb-6">
-                      At brishpathi Cast Pvt. Ltd., we are specialized in
-                      manufacturing all types of Ferrous & Non-Ferrous
-                      Investment Casting, Lost Wax Castings, Feinguss, and more,
-                      as per customers' requirements.
+                    <p className="text-slate-600 mb-6 leading-relaxed">
+                      At brishpathi Cast Pvt. Ltd., we specialize in
+                      manufacturing all types of ferrous & non-ferrous
+                      investment casting, lost wax castings, feinguss, and more,
+                      as per customers&apos; requirements.
                     </p>
                     <a
                       href="/about"
-                      className="inline-block text-red-600 hover:text-red-700 font-medium"
+                      className="inline-flex items-center text-amber-700 hover:text-amber-800 font-semibold text-sm tracking-wide"
                     >
                       Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Milestones Card */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="px-6 py-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-                  Milestones Achieved
-                </h2>
-                <div className="flex flex-col md:flex-row items-start gap-6">
-                  <img
-                    src="/images/casting-process-small.jpg"
-                    alt="Investment Casting Process"
-                    className="w-full md:w-1/3 rounded-lg object-cover"
-                  />
-                  <div>
-                    <p className="text-gray-600 mb-6">
-                      Investment Casting uses lost wax method which is not a new
-                      one. It is among the oldest known casting techniques and
-                      you will get many examples of it to produce jewelry and
-                      statuary.
-                    </p>
-                    <a
-                      href="/milestones"
-                      className="inline-block text-red-600 hover:text-red-700 font-medium"
-                    >
-                      Read More
+                      <span className="ml-1 inline-block translate-y-[1px] transition-transform group-hover:translate-x-0.5">
+                        →
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -188,293 +190,314 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      {/* Divider */}
+
+      {/* DIVIDER */}
       <div className="container mx-auto px-4">
-        <hr className="border-t border-gray-200 my-8" />
+        <hr className="border-t border-slate-200/80 my-8" />
       </div>
-      {/* Services/Products Preview */}
-      <section className="py-12 md:py-16">
+
+      {/* SERVICES */}
+      <section className="py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-slate-800">
             Our Specialized Services
           </h2>
+          <p className="text-center text-slate-500 mb-10 max-w-2xl mx-auto">
+            From complex investment casting to precision feinguss solutions, we
+            deliver consistent, high-performance components for demanding
+            industries.
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Service 1 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
-              <img
-                src="/images/investment-casting.jpg"
-                alt="Investment Casting"
-                className="w-full h-48 object-cover"
-              />
+            <div className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100">
+              <div className="relative overflow-hidden">
+                <img
+                  src="/images/investment-casting.jpg"
+                  alt="Investment Casting"
+                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3">Investment Casting</h3>
-                <p className="text-gray-600 mb-4">
-                  Precision engineered investment casting solutions for complex
+                <h3 className="text-xl font-bold mb-3 text-slate-800">
+                  Investment Casting
+                </h3>
+                <p className="text-slate-600 mb-4 leading-relaxed">
+                  Precision-engineered investment casting solutions for complex
                   components with tight tolerances.
                 </p>
                 <a
                   href="/investment-casting"
-                  className="inline-block text-red-600 hover:text-red-700 font-medium"
+                  className="inline-flex text-amber-700 hover:text-amber-800 font-semibold text-sm tracking-wide"
                 >
-                  Learn More
+                  Learn More →
                 </a>
               </div>
             </div>
 
             {/* Service 2 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
-              <img
-                src="/images/lost-wax-casting.jpg"
-                alt="Lost Wax Casting"
-                className="w-full h-48 object-cover"
-              />
+            <div className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100">
+              <div className="relative overflow-hidden">
+                <img
+                  src="/images/lost-wax-casting.jpg"
+                  alt="Lost Wax Casting"
+                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3">Lost Wax Casting</h3>
-                <p className="text-gray-600 mb-4">
-                  Traditional lost wax casting technique perfected with modern
-                  technology for superior results.
+                <h3 className="text-xl font-bold mb-3 text-slate-800">
+                  Lost Wax Casting
+                </h3>
+                <p className="text-slate-600 mb-4 leading-relaxed">
+                  Traditional lost wax casting perfected with modern technology
+                  for superior dimensional accuracy.
                 </p>
                 <a
                   href="/lost-wax-casting"
-                  className="inline-block text-red-600 hover:text-red-700 font-medium"
+                  className="inline-flex text-amber-700 hover:text-amber-800 font-semibold text-sm tracking-wide"
                 >
-                  Learn More
+                  Learn More →
                 </a>
               </div>
             </div>
 
             {/* Service 3 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
-              <img
-                src="/images/feinguss.jpg"
-                alt="Feinguss"
-                className="w-full h-48 object-cover"
-              />
+            <div className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100">
+              <div className="relative overflow-hidden">
+                <img
+                  src="/images/feinguss.jpg"
+                  alt="Feinguss"
+                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3">Feinguss</h3>
-                <p className="text-gray-600 mb-4">
-                  German precision engineering principles applied to create
-                  high-quality precision castings.
+                <h3 className="text-xl font-bold mb-3 text-slate-800">
+                  Feinguss
+                </h3>
+                <p className="text-slate-600 mb-4 leading-relaxed">
+                  German precision engineering applied to create high-quality
+                  precision castings for critical applications.
                 </p>
                 <a
                   href="/feinguss"
-                  className="inline-block text-red-600 hover:text-red-700 font-medium"
+                  className="inline-flex text-amber-700 hover:text-amber-800 font-semibold text-sm tracking-wide"
                 >
-                  Learn More
+                  Learn More →
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* CTA Section */}
-      <section className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        {/* Header Section */}
+
+      {/* CTA / LONG CONTENT */}
+      <section className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 via-white to-slate-100">
         <div className="mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-700 mb-6">
-            Investment Casting Manufacturers & Suppliers
+          <h1 className="text-4xl sm:text-5xl font-bold text-slate-800 mb-4 leading-tight">
+            Investment Casting Manufacturers &amp; Suppliers
           </h1>
-          <div className="h-1 w-full max-w-md bg-red-500 mb-8"></div>
-          <p className="text-gray-600 mb-8">
-            Meena Cast Pvt. Ltd., Leading Investment Casting Manufacturers based
-            in India offers better design capability, casting integrity and
-            close tolerances. The Investment Casting process provides secured
-            quality assurance, inexpensive tooling and a shorter lead time. The
-            span mechanical properties at the static or dynamic level continue
-            to be the same in every dimension and meets strict quality
-            requirements. It proves to be cost-effective for the prototype
-            development and allows superior design for extremely easy to highly
-            complicated Investment Casting products and parts quantities. In
-            Investment Casting Suppliers Meena Cast you have complete freedom to
-            select alloys, which ultimately helps in reducing the labor costs
-            and tooling costs.
+          <div className="h-1 w-full max-w-md bg-gradient-to-r from-amber-500 via-amber-300 to-amber-500 mb-8 rounded-full" />
+          <p className="text-slate-600 mb-8 leading-relaxed text-justify">
+            Meena Cast Pvt. Ltd., leading investment casting manufacturers based
+            in India, offers better design capability, casting integrity and
+            close tolerances. The investment casting process provides secured
+            quality assurance, inexpensive tooling and shorter lead times. The
+            span of mechanical properties at the static or dynamic level
+            continues to be the same in every dimension and meets strict quality
+            requirements. It proves to be cost-effective for prototype
+            development and allows superior design for extremely simple to
+            highly complicated investment casting products and parts. With Meena
+            Cast as your investment casting supplier, you have complete freedom
+            to select alloys, which ultimately helps in reducing labor costs and
+            tooling costs.
           </p>
         </div>
 
-        {/* First Row of Features */}
+        {/* FEATURES ROWS */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-          <div className="bg-gray-200 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">
+          <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">
               Design Flexibility
             </h3>
-            <div className="h-1 w-16 bg-red-500 mb-4"></div>
-            <p className="text-gray-600">
-              Casting can be done with compound features like 3D counters,
-              undercuts, and thin walls.
+            <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
+            <p className="text-slate-600">
+              Casting can be done with compound features like 3D contours,
+              undercuts and thin walls.
             </p>
           </div>
 
-          <div className="bg-gray-200 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">
+          <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">
               Wide Range of Alloys
             </h3>
-            <div className="h-1 w-16 bg-red-500 mb-4"></div>
-            <p className="text-gray-600">
-              We can routinely cast all the standards available in the world in
-              Ferrous and Non-Ferrous metals.
+            <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
+            <p className="text-slate-600">
+              We routinely cast most standard ferrous and non-ferrous alloys
+              used globally.
             </p>
           </div>
 
-          <div className="bg-gray-200 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">
+          <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">
               Freedom of Choosing Alloy
             </h3>
-            <div className="h-1 w-16 bg-red-500 mb-4"></div>
-            <p className="text-gray-600">
-              The components can be produced with aluminum, superalloy, or
-              titanium, best suited for the application.
+            <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
+            <p className="text-slate-600">
+              Components can be produced in aluminum, superalloy or titanium,
+              best suited for the application.
             </p>
           </div>
         </div>
 
-        {/* Second Row of Features */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <div className="bg-gray-200 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">
+          <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">
               Lower Component Cost
             </h3>
-            <div className="h-1 w-16 bg-red-500 mb-4"></div>
-            <p className="text-gray-600">
-              Investment Casting provides various functional features that help
-              you cut the general manufacturing cost and several sub-assemblies.
+            <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
+            <p className="text-slate-600">
+              Investment casting offers design features that help cut overall
+              manufacturing costs and assemblies.
             </p>
           </div>
 
-          <div className="bg-gray-200 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">
-              Minimizes the Machining Operations
+          <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">
+              Minimal Machining
             </h3>
-            <div className="h-1 w-16 bg-red-500 mb-4"></div>
-            <p className="text-gray-600">
-              The most efficient and functionally dimensioning method minimizes
-              the requirement of successive machining operations.
+            <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
+            <p className="text-slate-600">
+              Efficient dimensioning greatly reduces the need for successive
+              machining operations.
             </p>
           </div>
 
-          <div className="bg-gray-200 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">
-              Consistency and Close Tolerances
+          <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">
+              Consistency &amp; Close Tolerances
             </h3>
-            <div className="h-1 w-16 bg-red-500 mb-4"></div>
-            <p className="text-gray-600">
-              Provides control over the procedure variables, which results in
-              outstanding product consistency and closer tolerances.
+            <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
+            <p className="text-slate-600">
+              Tight control over process variables results in outstanding
+              consistency and closer tolerances.
             </p>
           </div>
         </div>
 
-        {/* Third Row of Features */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <div className="bg-gray-200 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">
-              Economical in Terms of Production and Prototype Quantities
+          <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">
+              Economical for Prototype &amp; Production
             </h3>
-            <div className="h-1 w-16 bg-red-500 mb-4"></div>
-            <p className="text-gray-600">
-              Prototypes and huge production can be done economically. In
-              addition, by including many useful features in one single casting,
-              you can lower the break-even quantity significantly.
+            <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
+            <p className="text-slate-600">
+              Prototypes and large production runs can both be done
+              economically, with multiple features in a single casting.
             </p>
           </div>
 
-          <div className="bg-gray-200 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">
-              Higher Static & Dynamic Mechanical Properties
+          <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">
+              Superior Mechanical Properties
             </h3>
-            <div className="h-1 w-16 bg-red-500 mb-4"></div>
-            <p className="text-gray-600">
-              Precise solidification casting methods of Casting Manufacturers
-              produce components with better mechanical properties.
+            <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
+            <p className="text-slate-600">
+              Controlled solidification yields components with excellent static
+              and dynamic mechanical properties.
             </p>
           </div>
 
-          <div className="bg-gray-200 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">
-              Procedure is the Solution of These Four Main Problems
+          <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">
+              Process Solves Key Challenges
             </h3>
-            <div className="h-1 w-16 bg-red-500 mb-4"></div>
-            <ul className="text-gray-600 space-y-2">
+            <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
+            <ul className="text-slate-600 space-y-2">
               <li className="flex items-start">
-                <span className="text-red-500 mr-2">—</span>
+                <span className="text-amber-600 mr-2">—</span>
                 <span>
-                  Casting must be reproducible inside closer dimensional limits.
+                  Castings must be reproducible within close dimensional limits.
                 </span>
               </li>
               <li className="flex items-start">
-                <span className="text-red-500 mr-2">—</span>
-                <span>
-                  Casting must be done with higher melting-point alloys.
-                </span>
+                <span className="text-amber-600 mr-2">—</span>
+                <span>Castings must be done with high-melting alloys.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-red-500 mr-2">—</span>
-                <span>There must be metallurgical quality standards.</span>
+                <span className="text-amber-600 mr-2">—</span>
+                <span>Metallurgical quality standards must be maintained.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-red-500 mr-2">—</span>
-                <span>Costs must be lower than alternative methods.</span>
+                <span className="text-amber-600 mr-2">—</span>
+                <span>Costs must stay below alternative methods.</span>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* India Section */}
+        {/* INDIA SECTION */}
         <div className="mt-16">
-          <div className="h-1 w-full max-w-md bg-red-500 mb-8 mx-auto"></div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-700 mb-6">
+          <div className="h-1 w-full max-w-md bg-gradient-to-r from-amber-500 via-amber-300 to-amber-500 mb-8 mx-auto rounded-full" />
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
             Investment Casting Manufacturers in India
           </h2>
-          <p className="text-gray-600">
-            Meena Cast is one of the most renowned Investment Casting
-            Manufacturers in India. In our Casting Manufacturers facility, we
-            design intricate castings. The casting manufacturing process is very
-            efficient and quick. We use the latest Investment Casting technology
-            and tools, that helps us to make good quality castings at a very
-            fast speed. Casting Manufacturers is also a cost-effective method
-            for making prototype development. We use a wide range of metals and
-            alloys for casting. Our specifically defined process empowers us to
-            make castings with extremely fine finishing.
+          <p className="text-slate-600 leading-relaxed text-justify">
+            Meena Cast is one of the most renowned investment casting
+            manufacturers in India. In our facility, we design intricate
+            castings using efficient and quick production processes. We deploy
+            the latest investment casting technology and tools, helping us
+            achieve high-quality castings at remarkable speed. This method is
+            also extremely cost-effective for prototype development. We use a
+            wide range of metals and alloys, and our rigorously defined process
+            empowers us to produce castings with exceptionally fine surface
+            finish and accuracy.
           </p>
         </div>
       </section>
-      <section className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 bg-gray-100">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-700 mb-6">
+
+      {/* BENEFITS SECTION */}
+      <section
+        id="contact"
+        className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 bg-slate-900"
+      >
+        <div className="max-w-5xl mx-auto text-slate-100">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Benefits of Working with Us
           </h2>
 
-          <p className="text-gray-600 mb-4">
+          <p className="text-slate-300 mb-4 leading-relaxed">
             Meena Cast Pvt. Ltd. is among the best investment casting
-            manufacturers in India. Meena Cast Pvt. Ltd. is a BSCIC, PED, and
-            IBR registered company. Our optimum quality standards and global
-            quality control procedures are certified by TUV NORD DIN EN 9001:
-            2015., PED & AD 2000-Merkblatt W0 certification.
+            manufacturers in India. We are a BSCIC, PED and IBR registered
+            company. Our optimum quality standards and global quality control
+            procedures are certified by TUV NORD DIN EN 9001:2015, PED &amp; AD
+            2000-Merkblatt W0.
           </p>
 
-          <p className="text-gray-600 mb-4">
+          <p className="text-slate-300 mb-4 leading-relaxed">
             If you would like to know more about our investment casting or how
-            we became one of the leading investment casting manufacturers,
-            please feel free to{" "}
+            we became one of the leading manufacturers, please feel free to{" "}
             <a
-              href="#contact"
-              className="text-red-600 hover:text-red-700 font-medium"
+              href="/contact"
+              className="text-amber-300 hover:text-amber-200 font-semibold"
             >
               contact us
             </a>
             .
           </p>
 
-          <p className="text-gray-600 mb-8">
-            Our online system and network of ERP offers the fastest and most
-            proficient online order processing system. We manufacture our
-            products to perfection with severe quality control applied at all
-            the levels. We have the biggest Machinery and Plant with in-house
-            Testing Laboratory.
+          <p className="text-slate-300 mb-8 leading-relaxed">
+            Our integrated ERP and online systems offer one of the fastest and
+            most efficient order processing experiences. We manufacture products
+            to perfection with severe quality control at every level and
+            maintain an extensive in-house testing laboratory along with a
+            modern plant and machinery setup.
           </p>
 
           <ul className="space-y-4">
             <li className="flex items-start">
-              <span className="text-red-500 flex-shrink-0 mt-1 mr-3">
+              <span className="text-amber-400 flex-shrink-0 mt-1 mr-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -488,13 +511,13 @@ const Homepage = () => {
                   />
                 </svg>
               </span>
-              <span className="text-gray-600">
-                We make sure about quality at every stage of our procedure.
+              <span className="text-slate-200">
+                We ensure uncompromising quality at every stage of the process.
               </span>
             </li>
 
             <li className="flex items-start">
-              <span className="text-red-500 flex-shrink-0 mt-1 mr-3">
+              <span className="text-amber-400 flex-shrink-0 mt-1 mr-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -508,13 +531,14 @@ const Homepage = () => {
                   />
                 </svg>
               </span>
-              <span className="text-gray-600">
-                We are completely dedicated towards problem solving.
+              <span className="text-slate-200">
+                We are strongly focused on solving customers&apos; engineering
+                and supply challenges.
               </span>
             </li>
 
             <li className="flex items-start">
-              <span className="text-red-500 flex-shrink-0 mt-1 mr-3">
+              <span className="text-amber-400 flex-shrink-0 mt-1 mr-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -528,8 +552,9 @@ const Homepage = () => {
                   />
                 </svg>
               </span>
-              <span className="text-gray-600">
-                We always provide realistic and flexible deadlines for delivery.
+              <span className="text-slate-200">
+                We provide realistic deadlines and consistently meet delivery
+                commitments.
               </span>
             </li>
           </ul>
