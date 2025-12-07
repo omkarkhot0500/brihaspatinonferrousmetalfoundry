@@ -88,7 +88,7 @@ const Form = () => {
       <motion.form
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 1 }}
+        transition={{ duration: 0.8 }}
         onSubmit={handleSubmit}
       >
         {/* Name */}
