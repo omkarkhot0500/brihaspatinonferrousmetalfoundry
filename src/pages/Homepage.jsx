@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { ChevronLeft, ChevronRight, Mail, Phone } from "lucide-react";
+import Img1 from "../assets/1.jpg";
+import Img2 from "../assets/2.jpg";
 
 const Homepage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
-      image: "/src/assets/1.jpg",
+      image: Img1,
       title: "Get the Best Investment Casting Solutions from Us!",
       description:
         "High-quality metal casting solutions for all your industrial needs",
     },
     {
-      image: "/src/assets/2.jpg",
+      image: Img2,
       title: "Precision Engineering at Its Finest",
       description: "Expert craftsmanship with advanced technology",
     },
