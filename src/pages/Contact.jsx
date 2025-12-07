@@ -272,6 +272,24 @@ const Contact = () => {
             </div>
           </div>
         </div>
+                {/* Google Map - Company Location */}
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+            Our Location
+          </h3>
+          <div className="rounded-lg overflow-hidden shadow-md h-72 md:h-96">
+            <iframe
+              src="https://www.google.com/maps?q=Brihaspati+Non-Ferrous+Metal+Foundry&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
         <Form/>
       </section>
     </>
