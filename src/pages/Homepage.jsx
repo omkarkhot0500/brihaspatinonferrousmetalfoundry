@@ -10,7 +10,7 @@ const Homepage = () => {
   const slides = [
     {
       image: Img1,
-      title: "Get the Best Investment Casting Solutions from Us!",
+      title: "Get the Best non-ferous Solutions from Us!",
       description:
         "High-quality metal casting solutions for all your industrial needs",
     },
@@ -41,25 +41,25 @@ const Homepage = () => {
     <>
       <Helmet>
         <title>
-          brishpathi Cast Pvt. Ltd. | Investment Casting Solutions & Metal
-          Casting Experts
+          brishpathi Cast Pvt. Ltd. | Non-Ferrous Solutions & Metal Casting
+          Experts
         </title>
         <meta
           name="description"
-          content="Leading manufacturer of ferrous & non-ferrous investment casting, lost wax castings, and feinguss. Quality control at all levels for perfect metal casting solutions."
+          content="Leading manufacturer of ferrous & non-ferrous Non-Ferrous, lost wax castings, and feinguss. Quality control at all levels for perfect metal casting solutions."
         />
         <meta
           name="keywords"
-          content="investment casting, lost wax casting, metal casting, ferrous casting, non-ferrous casting, feinguss, quality control"
+          content="Non-Ferrous, lost wax casting, metal casting, ferrous casting, non-ferrous casting, feinguss, quality control"
         />
         <link rel="canonical" href="https://brishpathi.com" />
         <meta
           property="og:title"
-          content="brishpathi Cast Pvt. Ltd. | Investment Casting Solutions"
+          content="brishpathi Cast Pvt. Ltd. | Non-Ferrous Solutions"
         />
         <meta
           property="og:description"
-          content="Leading manufacturer of ferrous & non-ferrous investment casting with severe quality control at all levels."
+          content="Leading manufacturer of ferrous & non-ferrous Non-Ferrous with severe quality control at all levels."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://brishpathi.com" />
@@ -169,10 +169,12 @@ const Homepage = () => {
                   </div>
                   <div>
                     <p className="text-slate-600 mb-6 leading-relaxed">
-                      At brishpathi Cast Pvt. Ltd., we specialize in
-                      manufacturing all types of ferrous & non-ferrous
-                      investment casting, lost wax castings, feinguss, and more,
-                      as per customers&apos; requirements.
+                      At Brishpathi Cast Pvt. Ltd., we specialize in
+                      manufacturing non-ferrous sand castings including CO₂ sand
+                      casting and no-bake mold casting, gravity die casting,
+                      shell mold casting, and centrifugal casting in copper
+                      alloys and stainless steel, as per customers’
+                      requirements.
                     </p>
                     <a
                       href="/about"
@@ -203,9 +205,8 @@ const Homepage = () => {
             Our Specialized Services
           </h2>
           <p className="text-center text-slate-500 mb-10 max-w-2xl mx-auto">
-            From complex investment casting to precision feinguss solutions, we
-            deliver consistent, high-performance components for demanding
-            industries.
+            From complex Non-Ferrous to precision feinguss solutions, we deliver
+            consistent, high-performance components for demanding industries.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Service 1 */}
@@ -213,17 +214,17 @@ const Homepage = () => {
               <div className="relative overflow-hidden">
                 <img
                   src="/images/investment-casting.jpg"
-                  alt="Investment Casting"
+                  alt="Non-Ferrous Casting"
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-3 text-slate-800">
-                  Investment Casting
+                  Non-Ferrous Casting
                 </h3>
                 <p className="text-slate-600 mb-4 leading-relaxed">
-                  Precision-engineered investment casting solutions for complex
+                  Precision-engineered Non-Ferrous Casting solutions for complex
                   components with tight tolerances.
                 </p>
                 <a
@@ -296,22 +297,22 @@ const Homepage = () => {
       <section className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 via-white to-slate-100">
         <div className="mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold text-slate-800 mb-4 leading-tight">
-            Investment Casting Manufacturers &amp; Suppliers
+            Non-Ferrous Casting Manufacturers &amp; Suppliers
           </h1>
           <div className="h-1 w-full max-w-md bg-gradient-to-r from-amber-500 via-amber-300 to-amber-500 mb-8 rounded-full" />
           <p className="text-slate-600 mb-8 leading-relaxed text-justify">
-            Meena Cast Pvt. Ltd., leading investment casting manufacturers based
-            in India, offers better design capability, casting integrity and
-            close tolerances. The investment casting process provides secured
-            quality assurance, inexpensive tooling and shorter lead times. The
-            span of mechanical properties at the static or dynamic level
-            continues to be the same in every dimension and meets strict quality
-            requirements. It proves to be cost-effective for prototype
+            Brihaspati Pvt. Ltd., leading Non-Ferrous Casting manufacturers
+            based in India, offers better design capability, casting integrity
+            and close tolerances. The Non-Ferrous Casting process provides
+            secured quality assurance, inexpensive tooling and shorter lead
+            times. The span of mechanical properties at the static or dynamic
+            level continues to be the same in every dimension and meets strict
+            quality requirements. It proves to be cost-effective for prototype
             development and allows superior design for extremely simple to
-            highly complicated investment casting products and parts. With Meena
-            Cast as your investment casting supplier, you have complete freedom
-            to select alloys, which ultimately helps in reducing labor costs and
-            tooling costs.
+            highly complicated Non-Ferrous Casting products and parts. With
+            Brihaspati Cast as your Non-Ferrous Casting supplier, you have
+            complete freedom to select alloys, which ultimately helps in
+            reducing labor costs and tooling costs.
           </p>
         </div>
 
@@ -358,7 +359,7 @@ const Homepage = () => {
             </h3>
             <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
             <p className="text-slate-600">
-              Investment casting offers design features that help cut overall
+              Non-Ferrous Casting offers design features that help cut overall
               manufacturing costs and assemblies.
             </p>
           </div>
@@ -441,13 +442,13 @@ const Homepage = () => {
         <div className="mt-16">
           <div className="h-1 w-full max-w-md bg-gradient-to-r from-amber-500 via-amber-300 to-amber-500 mb-8 mx-auto rounded-full" />
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
-            Investment Casting Manufacturers in India
+            Non-Ferrous Casting Manufacturers in India
           </h2>
           <p className="text-slate-600 leading-relaxed text-justify">
-            Meena Cast is one of the most renowned investment casting
+            Brihaspati is one of the most renowned Non-Ferrous Casting
             manufacturers in India. In our facility, we design intricate
             castings using efficient and quick production processes. We deploy
-            the latest investment casting technology and tools, helping us
+            the latest Non-Ferrous Casting technology and tools, helping us
             achieve high-quality castings at remarkable speed. This method is
             also extremely cost-effective for prototype development. We use a
             wide range of metals and alloys, and our rigorously defined process
@@ -468,7 +469,7 @@ const Homepage = () => {
           </h2>
 
           <p className="text-slate-300 mb-4 leading-relaxed">
-            Meena Cast Pvt. Ltd. is among the best investment casting
+            Brihaspati Pvt. Ltd. is among the best Non-Ferrous Casting
             manufacturers in India. We are a BSCIC, PED and IBR registered
             company. Our optimum quality standards and global quality control
             procedures are certified by TUV NORD DIN EN 9001:2015, PED &amp; AD
@@ -476,7 +477,7 @@ const Homepage = () => {
           </p>
 
           <p className="text-slate-300 mb-4 leading-relaxed">
-            If you would like to know more about our investment casting or how
+            If you would like to know more about our Non-Ferrous Casting or how
             we became one of the leading manufacturers, please feel free to{" "}
             <a
               href="/contact"

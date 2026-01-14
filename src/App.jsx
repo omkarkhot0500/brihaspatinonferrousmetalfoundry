@@ -8,6 +8,7 @@ import Layout from "./components/Layout";
 import Certification from "./pages/Certification";
 import Application from "./pages/Application";
 import Steelcasting from "./pages/Steelcasting";
+import Company from "./pages/Company";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="certification" element={<Certification />} />
           <Route path="application" element={<Application />} />
           <Route path="/ferrous/steel" element={<Steelcasting />} />
+          <Route path="/about" element={<Company />} />
           {/* <Route path="*" element={<Pagenotfound />} /> */}
         </Route>
       </Routes>
