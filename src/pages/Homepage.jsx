@@ -3,6 +3,9 @@ import { Helmet } from "react-helmet-async";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Img1 from "../assets/1.jpg";
 import Img2 from "../assets/2.jpg";
+import StainlessCasting from "../assets/StainlessCasting.jpg";
+import CO2Casting from "../assets/CO2Casting.jpg";
+import GravityCasting from "../assets/GravityCasting.png";
 
 const Homepage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -205,28 +208,29 @@ const Homepage = () => {
             Our Specialized Services
           </h2>
           <p className="text-center text-slate-500 mb-10 max-w-2xl mx-auto">
-            From complex Non-Ferrous to precision feinguss solutions, we deliver
-            consistent, high-performance components for demanding industries.
+            From complex non-ferrous castings to high-precision sand and
+            centrifugal casting solutions, we deliver consistent,
+            high-performance components for demanding industries.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Service 1 */}
             <div className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100">
               <div className="relative overflow-hidden">
                 <img
-                  src="/images/investment-casting.jpg"
+                  src={StainlessCasting}
                   alt="Non-Ferrous Casting"
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-slate-800">
-                  Non-Ferrous Casting
-                </h3>
+                <h3 className="text-xl font-semibold mb-2">Stainless Steel</h3>
                 <p className="text-slate-600 mb-4 leading-relaxed">
-                  Precision-engineered Non-Ferrous Casting solutions for complex
-                  components with tight tolerances.
+                  High-performance stainless steel castings engineered for
+                  superior corrosion resistance, strength, and durability in
+                  demanding industrial applications.
                 </p>
+
                 <a
                   href="/investment-casting"
                   className="inline-flex text-amber-700 hover:text-amber-800 font-semibold text-sm tracking-wide"
@@ -240,20 +244,20 @@ const Homepage = () => {
             <div className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100">
               <div className="relative overflow-hidden">
                 <img
-                  src="/images/lost-wax-casting.jpg"
+                  src={CO2Casting}
                   alt="Lost Wax Casting"
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-slate-800">
-                  Lost Wax Casting
-                </h3>
+                <h3 className="text-xl font-semibold mb-2">CO₂ Sand Casting</h3>
                 <p className="text-slate-600 mb-4 leading-relaxed">
-                  Traditional lost wax casting perfected with modern technology
-                  for superior dimensional accuracy.
+                  A precision sand casting process using CO₂-hardened molds to
+                  achieve excellent surface finish, dimensional accuracy, and
+                  consistent quality.
                 </p>
+
                 <a
                   href="/lost-wax-casting"
                   className="inline-flex text-amber-700 hover:text-amber-800 font-semibold text-sm tracking-wide"
@@ -267,20 +271,22 @@ const Homepage = () => {
             <div className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100">
               <div className="relative overflow-hidden">
                 <img
-                  src="/images/feinguss.jpg"
+                  src={GravityCasting}
                   alt="Feinguss"
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-slate-800">
-                  Feinguss
+                <h3 className="text-xl font-semibold mb-2">
+                  Gravity Die Casting
                 </h3>
                 <p className="text-slate-600 mb-4 leading-relaxed">
-                  German precision engineering applied to create high-quality
-                  precision castings for critical applications.
+                  Metal casting using permanent molds and gravity filling to
+                  produce dense, high-quality components with excellent
+                  mechanical properties.
                 </p>
+
                 <a
                   href="/feinguss"
                   className="inline-flex text-amber-700 hover:text-amber-800 font-semibold text-sm tracking-wide"
