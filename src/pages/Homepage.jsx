@@ -323,72 +323,41 @@ const Homepage = () => {
         </div>
 
         {/* FEATURES ROWS */}
+        {/* FEATURES ROWS */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
             <h3 className="text-xl font-semibold text-slate-800 mb-2">
-              Design Flexibility
+              CO₂ Sand Casting
             </h3>
             <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
             <p className="text-slate-600">
-              Casting can be done with compound features like 3D contours,
-              undercuts and thin walls.
+              CO₂ sand casting enables strong, rigid molds with good surface
+              finish, suitable for complex geometries and consistent dimensional
+              accuracy.
             </p>
           </div>
 
           <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
             <h3 className="text-xl font-semibold text-slate-800 mb-2">
-              Wide Range of Alloys
+              No-Bake Mold Casting
             </h3>
             <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
             <p className="text-slate-600">
-              We routinely cast most standard ferrous and non-ferrous alloys
-              used globally.
+              No-bake molding is ideal for large and complex castings, offering
+              excellent mold strength, flexibility in design, and reduced
+              tooling constraints.
             </p>
           </div>
 
           <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
             <h3 className="text-xl font-semibold text-slate-800 mb-2">
-              Freedom of Choosing Alloy
+              Gravity Die Casting
             </h3>
             <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
             <p className="text-slate-600">
-              Components can be produced in aluminum, superalloy or titanium,
-              best suited for the application.
-            </p>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
-            <h3 className="text-xl font-semibold text-slate-800 mb-2">
-              Lower Component Cost
-            </h3>
-            <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
-            <p className="text-slate-600">
-              Non-Ferrous Casting offers design features that help cut overall
-              manufacturing costs and assemblies.
-            </p>
-          </div>
-
-          <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
-            <h3 className="text-xl font-semibold text-slate-800 mb-2">
-              Minimal Machining
-            </h3>
-            <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
-            <p className="text-slate-600">
-              Efficient dimensioning greatly reduces the need for successive
-              machining operations.
-            </p>
-          </div>
-
-          <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
-            <h3 className="text-xl font-semibold text-slate-800 mb-2">
-              Consistency &amp; Close Tolerances
-            </h3>
-            <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
-            <p className="text-slate-600">
-              Tight control over process variables results in outstanding
-              consistency and closer tolerances.
+              Gravity die casting uses permanent molds to produce dense,
+              high-quality components with superior mechanical properties and
+              repeatability.
             </p>
           </div>
         </div>
@@ -396,49 +365,87 @@ const Homepage = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
             <h3 className="text-xl font-semibold text-slate-800 mb-2">
-              Economical for Prototype &amp; Production
+              Shell Mold Casting
             </h3>
             <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
             <p className="text-slate-600">
-              Prototypes and large production runs can both be done
-              economically, with multiple features in a single casting.
+              Shell mold casting delivers excellent surface finish and
+              dimensional precision, making it suitable for intricate components
+              and tighter tolerances.
             </p>
           </div>
 
           <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
             <h3 className="text-xl font-semibold text-slate-800 mb-2">
-              Superior Mechanical Properties
+              Centrifugal Casting
             </h3>
             <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
             <p className="text-slate-600">
-              Controlled solidification yields components with excellent static
-              and dynamic mechanical properties.
+              Centrifugal casting produces defect-free, high-density components
+              with superior mechanical strength, especially for cylindrical and
+              hollow parts.
             </p>
           </div>
 
           <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
             <h3 className="text-xl font-semibold text-slate-800 mb-2">
-              Process Solves Key Challenges
+              Copper Alloy Castings
+            </h3>
+            <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
+            <p className="text-slate-600">
+              Copper alloy castings offer excellent corrosion resistance, wear
+              resistance, and thermal conductivity for marine, industrial, and
+              process applications.
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">
+              Stainless Steel Castings
+            </h3>
+            <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
+            <p className="text-slate-600">
+              Stainless steel castings are engineered for high strength,
+              corrosion resistance, and durability in demanding environments and
+              critical applications.
+            </p>
+          </div>
+
+          <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">
+              Process Versatility
+            </h3>
+            <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
+            <p className="text-slate-600">
+              Multiple casting processes allow selection of the most suitable
+              method based on component size, complexity, alloy type, and
+              performance requirements.
+            </p>
+          </div>
+
+          <div className="bg-slate-100 p-6 rounded-xl border border-slate-200">
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">
+              Consistent Quality Output
             </h3>
             <div className="h-1 w-16 bg-amber-500 mb-4 rounded-full" />
             <ul className="text-slate-600 space-y-2">
               <li className="flex items-start">
                 <span className="text-amber-600 mr-2">—</span>
-                <span>
-                  Castings must be reproducible within close dimensional limits.
-                </span>
+                <span>Stable and repeatable casting processes.</span>
               </li>
               <li className="flex items-start">
                 <span className="text-amber-600 mr-2">—</span>
-                <span>Castings must be done with high-melting alloys.</span>
+                <span>Strict control over metallurgy and solidification.</span>
               </li>
               <li className="flex items-start">
                 <span className="text-amber-600 mr-2">—</span>
-                <span>Metallurgical quality standards must be maintained.</span>
+                <span>High integrity castings with reduced defects.</span>
               </li>
               <li className="flex items-start">
                 <span className="text-amber-600 mr-2">—</span>
-                <span>Costs must stay below alternative methods.</span>
+                <span>Optimized cost without compromising performance.</span>
               </li>
             </ul>
           </div>
@@ -475,16 +482,17 @@ const Homepage = () => {
           </h2>
 
           <p className="text-slate-300 mb-4 leading-relaxed">
-            Brihaspati Pvt. Ltd. is among the best Non-Ferrous Casting
-            manufacturers in India. We are a BSCIC, PED and IBR registered
-            company. Our optimum quality standards and global quality control
-            procedures are certified by TUV NORD DIN EN 9001:2015, PED &amp; AD
-            2000-Merkblatt W0.
+            Brihaspati Non Ferrous Metal Foundry is a rapidly growing
+            manufacturer of high-integrity non-ferrous and stainless steel
+            castings in India. We focus on delivering reliable,
+            precision-engineered components that meet stringent quality and
+            performance requirements across global industries.
           </p>
 
           <p className="text-slate-300 mb-4 leading-relaxed">
-            If you would like to know more about our Non-Ferrous Casting or how
-            we became one of the leading manufacturers, please feel free to{" "}
+            If you would like to know more about our casting capabilities such
+            as CO₂ Sand Casting, No-Bake Molding, Gravity Die Casting, Shell
+            Mold Casting, or Centrifugal Casting, please feel free to{" "}
             <a
               href="/contact"
               className="text-amber-300 hover:text-amber-200 font-semibold"
@@ -495,11 +503,10 @@ const Homepage = () => {
           </p>
 
           <p className="text-slate-300 mb-8 leading-relaxed">
-            Our integrated ERP and online systems offer one of the fastest and
-            most efficient order processing experiences. We manufacture products
-            to perfection with severe quality control at every level and
-            maintain an extensive in-house testing laboratory along with a
-            modern plant and machinery setup.
+            Our modern manufacturing facility, supported by skilled
+            professionals and strict process control, ensures consistent
+            quality, full material traceability, and dependable delivery for
+            every project.
           </p>
 
           <ul className="space-y-4">
@@ -519,7 +526,8 @@ const Homepage = () => {
                 </svg>
               </span>
               <span className="text-slate-200">
-                We ensure uncompromising quality at every stage of the process.
+                Uncompromising quality control at every stage of casting and
+                finishing.
               </span>
             </li>
 
@@ -539,8 +547,8 @@ const Homepage = () => {
                 </svg>
               </span>
               <span className="text-slate-200">
-                We are strongly focused on solving customers&apos; engineering
-                and supply challenges.
+                Strong engineering support to solve complex application
+                challenges.
               </span>
             </li>
 
@@ -560,8 +568,8 @@ const Homepage = () => {
                 </svg>
               </span>
               <span className="text-slate-200">
-                We provide realistic deadlines and consistently meet delivery
-                commitments.
+                Reliable delivery commitments backed by disciplined production
+                planning.
               </span>
             </li>
           </ul>
