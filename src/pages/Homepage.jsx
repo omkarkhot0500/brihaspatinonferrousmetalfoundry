@@ -74,69 +74,86 @@ const Homepage = () => {
 
       {/* HERO SLIDER */}
       <section className="relative min-h-[520px] md:min-h-[640px] overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-out ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            {/* Background image + gradient overlay */}
-            <div
-              className="absolute inset-0 bg-center bg-cover bg-no-repeat scale-105 transform-gpu transition-transform duration-[2000ms]"
-              style={{ backgroundImage: `url(${slide.image})` }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/70 to-slate-900/40" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/40" />
-            </div>
+        {slides.map((slide, index) => {
+          const isActive = index === currentSlide;
 
-            {/* Content */}
-            <div className="relative z-10 h-full flex items-center justify-center">
-              <div className="max-w-5xl mx-auto px-6 text-center">
-                <p className="mb-4 inline-block rounded-full border border-amber-400/40 bg-black/40 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-amber-200/90">
-                  Precision · Reliability · Quality
-                </p>
-                <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-[0_6px_25px_rgba(0,0,0,0.75)]">
-                  {slide.title}
-                </h1>
-                <p className="mt-5 text-base sm:text-lg md:text-xl text-slate-200/90 max-w-2xl mx-auto leading-relaxed">
-                  {slide.description}
-                </p>
-                {/* Buttons removed as requested */}
+          return (
+            <div
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-700 ease-in-out
+          ${
+            isActive
+              ? "opacity-100 z-10 pointer-events-auto"
+              : "opacity-0 z-0 pointer-events-none"
+          }
+        `}
+            >
+              {/* Background image */}
+              <div
+                className={`absolute inset-0 bg-center bg-cover bg-no-repeat transition-transform duration-[6000ms] ease-out
+            ${isActive ? "scale-105" : "scale-100"}
+          `}
+                style={{
+                  backgroundImage: `url(${slide.image})`,
+                  willChange: "transform",
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/70 to-slate-900/40" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/40" />
+              </div>
+
+              {/* Content */}
+              <div className="relative z-10 h-full flex items-center justify-center">
+                <div className="max-w-5xl mx-auto px-6 text-center">
+                  <p className="mb-4 inline-block rounded-full border border-amber-400/40 bg-black/40 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-amber-200/90">
+                    Precision · Reliability · Quality
+                  </p>
+
+                  <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-white">
+                    {slide.title}
+                  </h1>
+
+                  <p className="mt-5 text-base sm:text-lg md:text-xl text-slate-200/90 max-w-2xl mx-auto leading-relaxed">
+                    {slide.description}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
 
-        {/* Slider controls */}
+        {/* PREV BUTTON */}
         <button
           onClick={prevSlide}
-          className="group absolute left-4 top-1/2 flex -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-black/30 p-2 text-white backdrop-blur-md transition-all duration-200 hover:bg-black/60 hover:scale-105"
           aria-label="Previous slide"
+          className="z-30 absolute left-4 top-1/2 -translate-y-1/2 rounded-full border border-white/30 bg-black/30 p-2 text-white backdrop-blur-md hover:bg-black/60 transition"
         >
-          <ChevronLeft className="h-6 w-6 group-hover:-translate-x-0.5 transition-transform" />
+          <ChevronLeft className="h-6 w-6" />
         </button>
 
+        {/* NEXT BUTTON */}
         <button
           onClick={nextSlide}
-          className="group absolute right-4 top-1/2 flex -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-black/30 p-2 text-white backdrop-blur-md transition-all duration-200 hover:bg-black/60 hover:scale-105"
           aria-label="Next slide"
+          className="z-30 absolute right-4 top-1/2 -translate-y-1/2 rounded-full border border-white/30 bg-black/30 p-2 text-white backdrop-blur-md hover:bg-black/60 transition"
         >
-          <ChevronRight className="h-6 w-6 group-hover:translate-x-0.5 transition-transform" />
+          <ChevronRight className="h-6 w-6" />
         </button>
 
-        {/* Slider dots */}
-        <div className="absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 gap-2">
+        {/* DOTS */}
+        <div className="absolute bottom-6 left-1/2 z-30 flex -translate-x-1/2 gap-2">
           {slides.map((_, i) => (
             <button
               key={i}
               onClick={() => setCurrentSlide(i)}
-              className={`h-2.5 rounded-full transition-all duration-300 ${
-                i === currentSlide
-                  ? "w-8 bg-amber-400 shadow-[0_0_12px_rgba(251,191,36,0.8)]"
-                  : "w-2.5 bg-white/40 hover:bg-white/70"
-              }`}
-              aria-label={`Slide ${i + 1}`}
+              aria-label={`Go to slide ${i + 1}`}
+              className={`h-2.5 rounded-full transition-all duration-300
+          ${
+            i === currentSlide
+              ? "w-8 bg-amber-400 shadow-[0_0_12px_rgba(251,191,36,0.8)]"
+              : "w-2.5 bg-white/40 hover:bg-white/70"
+          }
+        `}
             />
           ))}
         </div>

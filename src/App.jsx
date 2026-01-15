@@ -9,6 +9,9 @@ import Certification from "./pages/Certification";
 import Application from "./pages/Application";
 import Steelcasting from "./pages/Steelcasting";
 import Company from "./pages/Company";
+import Nickecasting from "./pages/Nicklecasting";
+import Coppercasting from "./pages/Coppercasting";
+import Bronzecasting from "./pages/Bronzecasting";
 
 const App = () => {
   return (
@@ -21,6 +24,9 @@ const App = () => {
           <Route path="certification" element={<Certification />} />
           <Route path="application" element={<Application />} />
           <Route path="/ferrous/steel" element={<Steelcasting />} />
+          <Route path="/ferrous/nicle" element={<Nickecasting />} />
+          <Route path="/non-ferrous/copper" element={<Coppercasting />} />
+          <Route path="/non-ferrous/bronze" element={<Bronzecasting />} />
           <Route path="/about" element={<Company />} />
           {/* <Route path="*" element={<Pagenotfound />} /> */}
         </Route>

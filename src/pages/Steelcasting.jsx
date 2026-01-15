@@ -6,52 +6,126 @@ const Steelcasting = () => {
       {/* Header with semantic HTML for SEO */}
       <header className="bg-gradient-to-r from-gray-800 to-gray-700 text-white py-8 px-4 md:py-12">
         <div className="container mx-auto">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center">Steel Casting</h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center">
+            Brihaspati Non Ferrous Metal Foundry
+          </h1>
         </div>
       </header>
-      
+
       {/* Main content section */}
       <main className="container mx-auto px-4 py-8 md:py-12">
         {/* Company Introduction Section */}
         <section className="mb-12">
           <div className="max-w-4xl mx-auto">
             <p className="text-gray-700 leading-relaxed mb-6">
-              Meena Cast is one of the leading stainless steel casting exporters in India. We are also considered a renowned Inconel casting manufacturer. We have a knowledgeable and experienced team that specializes in duplex steel casting manufacturing. We have a dedicated team of casting experts who leave no stone unturned to manufacture high-quality stainless steel and other castings for various industries. The demand for castings is not limited to a particular industry. A wide range of industries are using castings, and therefore, more and more varieties of castings are in demand. We make sure that we make and supply a huge variety of stainless steel or Inconel castings to the users to fulfill their requirements.
+              Established in 2023, M/s. Brihaspati Non Ferrous Metal Foundry is a
+              technologically advanced manufacturing unit dedicated to the
+              design, engineering, and production of high-integrity Green Sand,
+              CO₂ Mould, No-Bake Mould, and Centrifugal Castings. We specialize in
+              two critical material families—Copper-Based Alloys and Stainless
+              Steels—serving industries where performance, corrosion resistance,
+              and durability are non-negotiable.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              With a 10,000 sq. mt. state-of-the-art manufacturing facility
+              located in Kittur, Belagavi, Karnataka, India, we operate as a
+              trusted global supply chain partner for demanding applications,
+              ranging from marine and oil &amp; gas to aerospace and chemical
+              processing.
             </p>
           </div>
         </section>
-        
+
         {/* Why Choose Us Section */}
         <section className="mb-12">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-800">
-              Why choose Meena Cast Pvt. Ltd. as the best stainless steel casting exporter?
+              Why Choose Brihaspati Non Ferrous Metal Foundry?
             </h2>
             <p className="text-gray-700 mb-8">
-              Here're a few of the top reasons to buy stainless steel castings and other castings from Meena Cast Pvt. Ltd.:
+              Our operations are guided by a strong core philosophy of Quality,
+              Innovation, Precision, and Partnership. Below are the key reasons
+              global customers trust us for critical casting solutions:
             </p>
-            
-            {/* Certification Section */}
+
+            {/* Core Competency Section */}
             <div className="mb-10">
-              <h3 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">Our certifications and superb quality</h3>
+              <h3 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">
+                Material Expertise &amp; Core Competencies
+              </h3>
               <p className="text-gray-700 leading-relaxed">
-                Meena Cast Pvt. Ltd. believes in supplying only the best quality castings to users as leading stainless steel, Inconel, and duplex steel casting manufacturer. We use tested and high-quality materials to make the castings. At the same time, we also make sure that we quality test our castings frequently, as we aim to offer only top-notch castings to our clients as one of the top-class stainless steel exporters. Also, we keep a close eye on industry trends and we keep upgrading our quality processes to test the castings even better. We have also acquired all the necessary certifications needed to manufacture and supply top-quality castings to our clients.
+                We possess deep metallurgical expertise in Copper Alloy Castings
+                such as Tin Bronzes, Aluminum Bronzes, Manganese Bronzes,
+                Phosphorous Bronze, Gun Metal, high-strength Brasses, and
+                specialty alloys including Nickel Aluminum Bronze, Silicon
+                Bronze, and Beryllium Copper. These materials deliver excellent
+                corrosion resistance, high wear resistance, superior
+                machinability, and strong thermal and electrical conductivity.
+              </p>
+              <p className="text-gray-700 leading-relaxed mt-4">
+                Our Stainless Steel casting capabilities include Austenitic,
+                Duplex, Martensitic, Nickel Alloy, and Precipitation Hardening
+                grades such as 17-4PH. These castings provide exceptional
+                corrosion and oxidation resistance, high strength across wide
+                temperature ranges, and excellent impact resistance for critical
+                applications.
               </p>
             </div>
-            
-            {/* Reliability Section */}
+
+            {/* Manufacturing Capability Section */}
             <div className="mb-10">
-              <h3 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">Reliability and trust</h3>
+              <h3 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">
+                Advanced Casting &amp; Manufacturing Processes
+              </h3>
               <p className="text-gray-700 leading-relaxed">
-                We have an advanced manufacturing unit; therefore, we are known as one of the most advanced Inconel and duplex steel casting manufacturers. Our team is capable of offering top-notch quality and very efficient castings as per the clients' requirements. Our clients know that we supply only tested and good-quality material. Therefore, they partner with us for long periods of time. Also, they recommend us to different clients as they know we offer them top-notch castings. We have been able to gain the trust of our clients by constantly fulfilling their expectations. We believe that the good quality of our castings has a major role to play in helping us build long and strong relationships with our clients.
+                We employ the most suitable casting process based on component
+                size, complexity, and application requirements. Our capabilities
+                include Green Sand Casting for large and complex geometries,
+                CO₂ Moulding for near-net-shape components with tight tolerances,
+                No-Bake Moulding for large and intricate parts, and Centrifugal
+                Casting for high-integrity cylindrical components.
+              </p>
+              <p className="text-gray-700 leading-relaxed mt-4">
+                Our integrated value-added services include in-house pattern and
+                mould design, CNC machining and finishing, non-destructive
+                testing (X-ray, dye penetrant, ultrasonic), heat treatment,
+                metallurgical testing, welding, assembly, pressure testing, and
+                complete material traceability with certified test reports.
               </p>
             </div>
-            
-            {/* Customized Offerings */}
+
+            {/* Reliability & Quality Section */}
             <div className="mb-10">
-              <h3 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">Customized Offerings</h3>
+              <h3 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">
+                Quality Assurance, Reliability &amp; Trust
+              </h3>
               <p className="text-gray-700 leading-relaxed">
-                Our team at Meena Cast aims to understand the specific requirements of every client to provide them with the best possible castings. We carefully understand and acknowledge the clients' requirements and based on that, we offer them the most suitable castings as per their needs. We can offer customized products as well if the client demands them. Even while making sure that we are offering customized castings and services to the client, we make sure that we focus on the quality of the products. Also, we believe in providing products at suitable prices to our clients.
+                Quality is engineered into every stage of our process. We follow
+                robust quality systems supported by advanced statistical process
+                control, first article inspection, and simulation-based gating
+                and risering design. Our on-site metallurgical laboratory is
+                equipped for chemical analysis using a Metavision 1008i
+                spectrometer and mechanical testing.
+              </p>
+              <p className="text-gray-700 leading-relaxed mt-4">
+                With full traceability from raw material melt to final shipment,
+                we ensure consistent, repeatable quality that meets global
+                standards and customer specifications, making us a reliable
+                long-term manufacturing partner.
+              </p>
+            </div>
+
+            {/* Customized Solutions Section */}
+            <div className="mb-10">
+              <h3 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">
+                Engineering Partnership &amp; Customized Solutions
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                We work closely with our customers from the design stage to
+                optimize castability, enhance performance, and reduce overall
+                costs. Our team delivers customized casting and machining
+                solutions tailored to specific application needs while
+                maintaining competitive pricing and on-time global delivery.
               </p>
             </div>
           </div>

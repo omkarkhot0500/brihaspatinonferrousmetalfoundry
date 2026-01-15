@@ -87,7 +87,7 @@ const Navbar = () => {
                       Stainless Steel Casting
                     </a>
                     <a
-                      href="/ferrous/iron"
+                      href="/ferrous/nicle"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-amber-500 transition-colors duration-150"
                     >
                       Nickel Alloy Casting
@@ -109,13 +109,13 @@ const Navbar = () => {
                 {isNonFerrousOpen && (
                   <div className="absolute left-full top-0 mt-2 bg-white shadow-lg rounded-md w-48 py-2 z-50">
                     <a
-                      href="/non-ferrous/aluminum"
+                      href="/non-ferrous/copper"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-amber-500 transition-colors duration-150"
                     >
                       Copper Alloy Casting
                     </a>
                     <a
-                      href="/non-ferrous/copper"
+                      href="/non-ferrous/bronze"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-amber-500 transition-colors duration-150"
                     >
                       Bronze Casting
