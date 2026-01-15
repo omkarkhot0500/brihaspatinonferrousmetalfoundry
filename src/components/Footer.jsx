@@ -5,19 +5,22 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white pt-12 pb-6">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          <div>
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+          {/* About */}
+          <div className="text-center sm:text-left">
             <h3 className="text-xl font-bold mb-4">
               About Brihaspati Non-Ferrous Metal Foundry
             </h3>
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-300 mb-4 text-sm sm:text-base">
               Manufacturer of Copper Alloy and Stainless Steel Alloy Castings &
               Machined Components, delivering high-integrity solutions with
               strict quality control.
             </p>
           </div>
 
-          <div>
+          {/* Quick Links */}
+          <div className="text-center sm:text-left">
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
@@ -51,21 +54,24 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          {/* Contact */}
+          <div className="text-center sm:text-left sm:col-span-2 md:col-span-1">
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-            <address className="not-italic text-gray-300 space-y-2">
-              <p className="flex items-center">
-                <Phone className="h-5 w-5 mr-2" />
-                +91 83104 32701
+            <address className="not-italic text-gray-300 space-y-3 text-sm sm:text-base">
+              <p className="flex items-start sm:items-center justify-center sm:justify-start gap-2">
+                <Phone className="h-5 w-5 flex-shrink-0" />
+                <span>+91 83104 32701</span>
               </p>
-              <p className="flex items-center">
-                <MapPin className="h-5 w-5 mr-2" />
-                Plot No. 70, Road No. 8, KIADB Industrial Area, Kittur, Belagavi
-                591115
+              <p className="flex items-start sm:items-center justify-center sm:justify-start gap-2">
+                <MapPin className="h-5 w-5 flex-shrink-0" />
+                <span>
+                  Plot No. 70, Road No. 8, KIADB Industrial Area, Kittur, Belagavi
+                  591115
+                </span>
               </p>
-              <p className="flex items-center">
-                <Mail className="h-5 w-5 mr-2" />
-                info@brihaspatifoundry.com
+              <p className="flex items-start sm:items-center justify-center sm:justify-start gap-2">
+                <Mail className="h-5 w-5 flex-shrink-0" />
+                <span>info@brihaspatifoundry.com</span>
               </p>
             </address>
           </div>
@@ -73,7 +79,8 @@ const Footer = () => {
 
         <hr className="border-gray-700 my-6" />
 
-        <div className="text-center text-gray-400">
+        {/* Copyright */}
+        <div className="text-center text-gray-400 text-sm">
           <p>
             &copy; {new Date().getFullYear()} Brihaspati Non-Ferrous Metal Foundry.
             All rights reserved.
