@@ -12,6 +12,7 @@ import Company from "./pages/Company";
 import Nickecasting from "./pages/Nicklecasting";
 import Coppercasting from "./pages/Coppercasting";
 import Bronzecasting from "./pages/Bronzecasting";
+import ValveCasting from './pages/ValveCasting';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/ferrous/nicle" element={<Nickecasting />} />
           <Route path="/non-ferrous/copper" element={<Coppercasting />} />
           <Route path="/non-ferrous/bronze" element={<Bronzecasting />} />
+          <Route path="/products/valve" element={<ValveCasting />} />
           <Route path="/about" element={<Company />} />
           {/* <Route path="*" element={<Pagenotfound />} /> */}
         </Route>
