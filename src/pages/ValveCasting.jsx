@@ -1,4 +1,16 @@
 import React from "react";
+import NickelAluminiumBronzeCastingimage1 from "../assets/valveImages/na.jpg";
+import NickelAluminiumBronzeCastingimage2 from "../assets/valveImages/na1.jpg";
+import NickelAluminiumBronzeCastingimage3 from "../assets/valveImages/NAB.jpg";
+import NickelAluminiumBronzeCastingimage4 from "../assets/valveImages/nb3.webp";
+import GunMetalCastingimage1 from "../assets/valveImages/gm1.jpg";
+import GunMetalCastingimage2 from "../assets/valveImages/gm2.webp";
+import GunMetalCastingimage3 from "../assets/valveImages/gm3.avif";
+import GunMetalCastingimage4 from "../assets/valveImages/gm4.webp";
+import StainlessSteelCastingimage1 from "../assets/valveImages/ss1.webp";
+import StainlessSteelCastingimage2 from "../assets/valveImages/ss2.jpg";
+import StainlessSteelCastingimage3 from "../assets/valveImages/ss3.webp";
+import StainlessSteelCastingimage4 from "../assets/valveImages/ss4.webp";
 
 const ValveCasting = () => {
   return (
@@ -33,21 +45,90 @@ const ValveCasting = () => {
           </div>
         </section>
 
-        {/* Image Grid */}
-        <section className="mb-12">
-          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {Array.from({ length: 12 }).map((_, i) => (
-              <div
-                key={i}
-                className="border rounded-md overflow-hidden bg-white shadow-sm hover:shadow-md transition"
-              >
-                <img
-                  src={`/images/valve/valve-${i + 1}.jpg`}
-                  alt="Valve Casting Component"
-                  className="w-full h-32 sm:h-40 md:h-44 object-cover"
-                />
-              </div>
-            ))}
+        {/* Casting Image Sections */}
+        <section className="mb-16 space-y-16">
+          {/* Nickel Aluminium Bronze Casting */}
+          <div>
+            <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-6">
+              Nickel Aluminium Bronze Casting
+            </h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {[
+                NickelAluminiumBronzeCastingimage1,
+                NickelAluminiumBronzeCastingimage2,
+                NickelAluminiumBronzeCastingimage3,
+                NickelAluminiumBronzeCastingimage4,
+              ].map((img, i) => (
+                <div
+                  key={i}
+                  className="border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition duration-300"
+                >
+                  <img
+                    src={img}
+                    alt="Nickel Aluminium Bronze Casting"
+                    className="w-full aspect-[4/3] object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Gun Metal Casting */}
+          <div>
+            <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-6">
+              Gun Metal Casting
+            </h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {[
+                GunMetalCastingimage1,
+                GunMetalCastingimage2,
+                GunMetalCastingimage3,
+                GunMetalCastingimage4,
+              ].map((img, i) => (
+                <div
+                  key={i}
+                  className="border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition duration-300"
+                >
+                  <img
+                    src={img}
+                    alt="Gun Metal Casting"
+                    className="w-full aspect-[4/3] object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Stainless Steel Casting */}
+          <div>
+            <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-6">
+              Stainless Steel Casting
+            </h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {[
+                StainlessSteelCastingimage1,
+                StainlessSteelCastingimage2,
+                StainlessSteelCastingimage3,
+                StainlessSteelCastingimage4,
+              ].map((img, i) => (
+                <div
+                  key={i}
+                  className="border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition duration-300"
+                >
+                  <img
+                    src={img}
+                    alt="Stainless Steel Casting"
+                    className="w-full aspect-[4/3] object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -97,57 +178,6 @@ const ValveCasting = () => {
               <li>Consistent quality with full traceability</li>
               <li>Reliable delivery and technical support</li>
             </ul>
-          </div>
-        </section>
-
-        {/* Customized Services */}
-        <section className="mb-12">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-gray-800">
-              Customized Valve Casting Services
-            </h2>
-
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">
-              We offer customized valve casting solutions based on customer
-              drawings, material specifications, and performance requirements.
-              Our engineering team works closely with clients to deliver
-              application-specific casting solutions.
-            </p>
-
-            <h3 className="text-lg sm:text-xl font-semibold mb-3 text-gray-800">
-              Types of Valve Castings We Offer
-            </h3>
-
-            <ul className="list-disc pl-5 space-y-2 text-sm sm:text-base text-gray-700">
-              <li>Ball Valve Casting</li>
-              <li>Butterfly Valve Casting</li>
-              <li>Gate Valve Casting</li>
-              <li>Check Valve Casting</li>
-              <li>Plug Valve Casting</li>
-              <li>Control Valve Casting</li>
-            </ul>
-          </div>
-        </section>
-
-        {/* Ball Valve Casting */}
-        <section className="mb-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-gray-800">
-              Ball Valve Casting
-            </h2>
-
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-              Ball valve casting is a precision manufacturing process used to
-              produce durable ball valves that control fluid flow in pipelines.
-              These valves are widely used in oil &amp; gas, chemical
-              processing, power generation, agriculture, and water treatment.
-            </p>
-
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-              Our ball valve castings offer excellent strength, dimensional
-              accuracy, and customization flexibility, making them suitable for
-              high-volume and critical applications.
-            </p>
           </div>
         </section>
       </main>
