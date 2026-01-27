@@ -92,19 +92,19 @@ const Navbar = () => {
                 href="/products/GeneralEngineeringCasting"
                 className="block px-4 py-2 hover:bg-gray-50"
               >
-                General Engineering Casting 
+                General Engineering Casting
               </a>
               <a
-                href="/products/vacuum-impellers"
+                href="/products/CentrifugalCasting"
                 className="block px-4 py-2 hover:bg-gray-50"
               >
-                Vacuum Impellers Casting
+                Centrifugal Casting
               </a>
               <a
-                href="/products/impeller"
+                href="/products/GravityDieCasting"
                 className="block px-4 py-2 hover:bg-gray-50"
               >
-                Impeller Casting
+                Gravity Die Casting
               </a>
               <a
                 href="/products/fire-fighting"
@@ -210,11 +210,11 @@ const Navbar = () => {
             {mobileProductsOpen && (
               <div className="ml-4 flex flex-col gap-2 text-sm">
                 <a href="/products/valve">Valve Casting</a>
-                <a href="/products/GeneralEngineeringCasting ">General Engineering Casting</a>
-                <a href="/products/GeneralEngineeringCasting">
-                  Vacuum Impellers Casting
+                <a href="/products/GeneralEngineeringCasting ">
+                  General Engineering Casting
                 </a>
-                <a href="/products/impeller">Impeller Casting</a>
+                <a href="/products/CentrifugalCasting"> Centrifugal Casting </a>
+                <a href="/products/GravityDieCasting">Gravity Die Casting</a>
                 <a href="/products/fire-fighting">
                   Fire Fighting Equipment Casting
                 </a>

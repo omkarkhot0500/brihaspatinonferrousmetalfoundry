@@ -48,13 +48,13 @@ const GeneralEngineeringCasting = () => {
                 CopperAlloyImage4,
               ].map((img, i) => (
                 <div
-  key={i}
-  className="border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition duration-300"
->
-  <img
-    src={img}
-    alt="Nickel Aluminium Bronze Casting"
-    className="
+                  key={i}
+                  className="border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition duration-300"
+                >
+                  <img
+                    src={img}
+                    alt="Nickel Aluminium Bronze Casting"
+                    className="
       w-full 
       h-40 
       sm:h-48 
@@ -63,10 +63,9 @@ const GeneralEngineeringCasting = () => {
       object-contain 
       bg-gray-50
     "
-    loading="lazy"
-  />
-</div>
-
+                    loading="lazy"
+                  />
+                </div>
               ))}
             </div>
           </div>
