@@ -12,7 +12,8 @@ import Company from "./pages/Company";
 import Nickecasting from "./pages/Nicklecasting";
 import Coppercasting from "./pages/Coppercasting";
 import Bronzecasting from "./pages/Bronzecasting";
-import ValveCasting from './pages/ValveCasting';
+import ValveCasting from "./pages/ValveCasting";
+import GeneralEngineeringCasting from "./pages/GeneralEngineeringCasting";
 
 const App = () => {
   return (
@@ -24,12 +25,21 @@ const App = () => {
           <Route path="contact" element={<Contact />} />
           <Route path="certification" element={<Certification />} />
           <Route path="application" element={<Application />} />
-          <Route path="/ferrous/steel" element={<Steelcasting />} />
-          <Route path="/ferrous/nicle" element={<Nickecasting />} />
-          <Route path="/non-ferrous/copper" element={<Coppercasting />} />
-          <Route path="/non-ferrous/bronze" element={<Bronzecasting />} />
-          <Route path="/products/valve" element={<ValveCasting />} />
-          <Route path="/about" element={<Company />} />
+
+          {/* Casting Materials */}
+          <Route path="ferrous/steel" element={<Steelcasting />} />
+          <Route path="ferrous/nicle" element={<Nickecasting />} />
+          <Route path="non-ferrous/copper" element={<Coppercasting />} />
+          <Route path="non-ferrous/bronze" element={<Bronzecasting />} />
+
+          {/* Products */}
+          <Route path="products/valve" element={<ValveCasting />} />
+          <Route
+            path="products/generalengineeringcasting"
+            element={<GeneralEngineeringCasting />}
+          />
+
+          <Route path="about" element={<Company />} />
           {/* <Route path="*" element={<Pagenotfound />} /> */}
         </Route>
       </Routes>

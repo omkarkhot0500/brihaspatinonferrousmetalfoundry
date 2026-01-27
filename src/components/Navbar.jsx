@@ -89,10 +89,10 @@ const Navbar = () => {
                 Valve Casting
               </a>
               <a
-                href="/products/pumps-casing"
+                href="/products/GeneralEngineeringCasting"
                 className="block px-4 py-2 hover:bg-gray-50"
               >
-                Pumps & Casing Casting
+                General Engineering Casting 
               </a>
               <a
                 href="/products/vacuum-impellers"
@@ -210,8 +210,8 @@ const Navbar = () => {
             {mobileProductsOpen && (
               <div className="ml-4 flex flex-col gap-2 text-sm">
                 <a href="/products/valve">Valve Casting</a>
-                <a href="/products/pumps-casing">Pumps & Casing Casting</a>
-                <a href="/products/vacuum-impellers">
+                <a href="/products/GeneralEngineeringCasting ">General Engineering Casting</a>
+                <a href="/products/GeneralEngineeringCasting">
                   Vacuum Impellers Casting
                 </a>
                 <a href="/products/impeller">Impeller Casting</a>
