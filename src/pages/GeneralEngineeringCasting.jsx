@@ -1,16 +1,16 @@
 import React from "react";
 
 /* Copper Alloy Casting Images (9) */
-import CopperAlloyImage1 from "../assets/GeneralEngineering/ca1.png";
+import CopperAlloyImage1 from "../assets/GeneralEngineering/ca1.jpg";
 import CopperAlloyImage2 from "../assets/GeneralEngineering/ca2.webp";
 import CopperAlloyImage3 from "../assets/GeneralEngineering/ca3.jpg";
 import CopperAlloyImage4 from "../assets/GeneralEngineering/ca4.avif";
 
 /* Stainless Steel Casting & Machined Images (9) */
-import StainlessMachinedImage1 from "../assets/GeneralEngineering/ss1.jpg";
-import StainlessMachinedImage2 from "../assets/GeneralEngineering/ss2.jpg";
-import StainlessMachinedImage3 from "../assets/GeneralEngineering/ss3.webp";
-import StainlessMachinedImage4 from "../assets/GeneralEngineering/ss4.jpg";
+import StainlessMachinedImage1 from "../assets/GeneralEngineering/sc1.png";
+import StainlessMachinedImage2 from "../assets/GeneralEngineering/sc2.png";
+import StainlessMachinedImage3 from "../assets/GeneralEngineering/sc3.png";
+import StainlessMachinedImage4 from "../assets/CentrifugalCasting/sc2.webp";
 
 const GeneralEngineeringCasting = () => {
   return (

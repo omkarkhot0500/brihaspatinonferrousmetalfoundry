@@ -290,7 +290,7 @@ const Homepage = () => {
                 <img
                   src={GravityCasting}
                   alt="Feinguss"
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>

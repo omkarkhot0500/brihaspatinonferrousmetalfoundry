@@ -8,7 +8,7 @@ import Cu3 from "../assets/ShellMould/cu3.webp";
 /* Stainless Steel – Shell Mould (9) */
 import Ss1 from "../assets/ShellMould/ss1.webp";
 import Ss2 from "../assets/ShellMould/ss2.webp";
-import Ss3 from "../assets/ShellMould/ss3.jpg";
+// import Ss3 from "../assets/ShellMould/ss3.jpg";
 
 const ShellMouldCasting = () => {
   return (
@@ -53,7 +53,7 @@ const ShellMouldCasting = () => {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {[Ss1, Ss2, Ss3].map((img, i) => (
+            {[Ss1, Ss2].map((img, i) => (
               <div key={i} className="border rounded-lg bg-white shadow-sm hover:shadow-md flex items-center justify-center">
                 <img src={img} alt="Shell Mould Stainless Steel Casting" className="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-contain bg-gray-50" />
               </div>

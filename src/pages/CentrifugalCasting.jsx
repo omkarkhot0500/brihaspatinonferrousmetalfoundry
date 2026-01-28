@@ -3,14 +3,14 @@ import React from "react";
 /* Copper Alloy – Centrifugal Casting Images (9) */
 import CopperCentrifugal1 from "../assets/CentrifugalCasting/cc1.png";
 import CopperCentrifugal2 from "../assets/CentrifugalCasting/cc2.jpg";
-import CopperCentrifugal3 from "../assets/CentrifugalCasting/cc3.png";
-import CopperCentrifugal4 from "../assets/CentrifugalCasting/cc4.webp";
+// import CopperCentrifugal3 from "../assets/CentrifugalCasting/cc3.png";
+// import CopperCentrifugal4 from "../assets/CentrifugalCasting/cc4.webp";
 
 /* Stainless Steel – Centrifugal Casting Images (9) */
 import StainlessCentrifugal1 from "../assets/CentrifugalCasting/sc1.jpg";
 import StainlessCentrifugal2 from "../assets/CentrifugalCasting/sc2.webp";
 import StainlessCentrifugal3 from "../assets/CentrifugalCasting/sc3.webp";
-import StainlessCentrifugal4 from "../assets/CentrifugalCasting/sc4.webp";
+// import StainlessCentrifugal4 from "../assets/CentrifugalCasting/sc4.webp";
 
 const CentrifugalCasting = () => {
   return (
@@ -44,8 +44,8 @@ const CentrifugalCasting = () => {
               {[
                 CopperCentrifugal1,
                 CopperCentrifugal2,
-                CopperCentrifugal3,
-                CopperCentrifugal4,
+                // CopperCentrifugal3,
+                // CopperCentrifugal4,
               ].map((img, i) => (
                 <div
                   key={i}
@@ -79,7 +79,7 @@ const CentrifugalCasting = () => {
                 StainlessCentrifugal1,
                 StainlessCentrifugal2,
                 StainlessCentrifugal3,
-                StainlessCentrifugal4,
+                // StainlessCentrifugal4,
               ].map((img, i) => (
                 <div
                   key={i}
