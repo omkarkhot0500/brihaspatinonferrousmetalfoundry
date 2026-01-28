@@ -249,7 +249,7 @@ const Homepage = () => {
                 </p>
 
                 <a
-                  href="/investment-casting"
+                  href="/products/GeneralEngineeringCasting"
                   className="inline-flex text-amber-700 hover:text-amber-800 font-semibold text-sm tracking-wide"
                 >
                   Learn More →
@@ -276,7 +276,7 @@ const Homepage = () => {
                 </p>
 
                 <a
-                  href="/lost-wax-casting"
+                  href="/products/CO2MouldCasting"
                   className="inline-flex text-amber-700 hover:text-amber-800 font-semibold text-sm tracking-wide"
                 >
                   Learn More →
@@ -305,7 +305,7 @@ const Homepage = () => {
                 </p>
 
                 <a
-                  href="/feinguss"
+                  href="/products/GravityDieCasting"
                   className="inline-flex text-amber-700 hover:text-amber-800 font-semibold text-sm tracking-wide"
                 >
                   Learn More →
