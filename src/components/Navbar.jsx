@@ -107,28 +107,22 @@ const Navbar = () => {
                 Gravity Die Casting
               </a>
               <a
-                href="/products/fire-fighting"
+                href="/products/ShellMouldCasting"
                 className="block px-4 py-2 hover:bg-gray-50"
               >
-                Fire Fighting Equipment Casting
+                Shell Mould Casting
               </a>
               <a
-                href="/products/dairy-equipment"
+                href="/products/CO2MouldCasting"
                 className="block px-4 py-2 hover:bg-gray-50"
               >
-                Dairy Equipments Casting
+                CO2 Mould Casting
               </a>
               <a
-                href="/products/engineering-components"
+                href="/products/NoBakeMouldCasting"
                 className="block px-4 py-2 hover:bg-gray-50"
               >
-                Engineering Components Casting
-              </a>
-              <a
-                href="/products/machined-components"
-                className="block px-4 py-2 hover:bg-gray-50"
-              >
-                Machined Components Casting
+                No Bake Mould Casting
               </a>
             </div>
           </div>
@@ -215,16 +209,9 @@ const Navbar = () => {
                 </a>
                 <a href="/products/CentrifugalCasting"> Centrifugal Casting </a>
                 <a href="/products/GravityDieCasting">Gravity Die Casting</a>
-                <a href="/products/fire-fighting">
-                  Fire Fighting Equipment Casting
-                </a>
-                <a href="/products/dairy-equipment">Dairy Equipments Casting</a>
-                <a href="/products/engineering-components">
-                  Engineering Components Casting
-                </a>
-                <a href="/products/machined-components">
-                  Machined Components Casting
-                </a>
+                <a href="/products/ShellMouldCasting">Shell Mould Casting</a>
+                <a href="/products/CO2MouldCasting">CO2 Mould Casting</a>
+                <a href="/products/NoBakeMouldCasting">No Bake Mould Casting</a>
               </div>
             )}
 

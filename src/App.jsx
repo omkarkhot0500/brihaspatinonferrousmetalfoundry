@@ -16,6 +16,9 @@ import ValveCasting from "./pages/ValveCasting";
 import GeneralEngineeringCasting from "./pages/GeneralEngineeringCasting";
 import CentrifugalCasting from "./pages/CentrifugalCasting";
 import GravityDieCasting from "./pages/GravityDieCasting";
+import ShellMouldCasting from "./pages/ShellMouldCasting";
+import CO2MouldCasting from "./pages/CO2MouldCasting";
+import NoBakeMouldCasting from "./pages/NoBakeMouldCasting";
 
 const App = () => {
   return (
@@ -36,9 +39,30 @@ const App = () => {
 
           {/* Products */}
           <Route path="products/valve" element={<ValveCasting />} />
-          <Route path="products/generalengineeringcasting" element={<GeneralEngineeringCasting />} />
-          <Route path="products/CentrifugalCasting" element={<CentrifugalCasting />} />
-          <Route path="products/GravityDieCasting" element={<GravityDieCasting />} />
+          <Route
+            path="products/generalengineeringcasting"
+            element={<GeneralEngineeringCasting />}
+          />
+          <Route
+            path="products/CentrifugalCasting"
+            element={<CentrifugalCasting />}
+          />
+          <Route
+            path="products/GravityDieCasting"
+            element={<GravityDieCasting />}
+          />
+          <Route
+            path="products/ShellMouldCasting"
+            element={<ShellMouldCasting />}
+          />
+          <Route
+            path="products/CO2MouldCasting"
+            element={<CO2MouldCasting />}
+          />
+          <Route
+            path="products/NoBakeMouldCasting"
+            element={<NoBakeMouldCasting />}
+          />
 
           <Route path="about" element={<Company />} />
           {/* <Route path="*" element={<Pagenotfound />} /> */}
