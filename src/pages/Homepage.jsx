@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Img1 from "../assets/1.jpg";
 import Img2 from "../assets/2.jpg";
-import StainlessCasting from "../assets/StainlessCasting.jpg";
+import StainlessCasting from "../assets/StainlessCasting.png";
 import CO2Casting from "../assets/CO2Casting.jpg";
 import GravityCasting from "../assets/GravityCasting.png";
 
@@ -236,7 +236,7 @@ const Homepage = () => {
                 <img
                   src={StainlessCasting}
                   alt="Non-Ferrous Casting"
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
@@ -263,7 +263,7 @@ const Homepage = () => {
                 <img
                   src={CO2Casting}
                   alt="Lost Wax Casting"
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
