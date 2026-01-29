@@ -199,18 +199,12 @@ export default function HomepageClient() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Service 1 */}
             <div className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100">
-              <div className="relative overflow-hidden bg-slate-300">
+              <div className="relative overflow-hidden">
                 <img
                   src="/images/StainlessCasting.png"
                   alt="Non-Ferrous Casting"
                   className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
-                  onError={(e) => {
-                    e.target.style.display = "none";
-                  }}
                 />
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                  <span>Stainless Steel Casting</span>
-                </div>
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
               <div className="p-6">
