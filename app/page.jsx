@@ -1,13 +1,7 @@
-"use client";
-
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import Img1 from "@/public/images/1.jpg";
-import Img2 from "@/public/images/2.jpg";
-import StainlessCasting from "@/public/images/StainlessCasting.png";
-import CO2Casting from "@/public/images/CO2Casting.jpg";
-import GravityCasting from "@/public/images/GravityCasting.png";
+import HomepageClient from "@/components/HomepageClient";
 
 export const metadata = {
   title: "brishpathi Cast Pvt. Ltd. | Non-Ferrous Solutions & Metal Casting Experts",
