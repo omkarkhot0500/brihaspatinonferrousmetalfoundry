@@ -1,10 +1,10 @@
 [build]
-  command = "npm run build"
+  command = "npm ci && npm run build"
   functions = "netlify/functions"
   publish = ".next"
 
 [build.environment]
-  NODE_VERSION = "20.x"
+  NODE_VERSION = "18"
 
 [context.production.environment]
   NEXT_PUBLIC_EMAILJS_SERVICE_ID = "service_846meoc"

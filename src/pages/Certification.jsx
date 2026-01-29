@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 
-// PDF files
-import bronzePdf from "../assets/Bronze.pdf";
-import bronzeReportPdf from "../assets/Bronze_Report.pdf";
-import machineryListPdf from "../assets/Machinery_List.pdf";
-import msmePdf from "../assets/MSME_Certificate.pdf";
-import isoPdf from "../assets/ISO_Certificate.pdf";
-
 // Thumbnails
 import bronzeThumb from "../assets/Bronze.png";
 import bronzeReportThumb from "../assets/Bronze_Report.png";
 import machineryThumb from "../assets/Machinery_List.png";
 import msmeThumb from "../assets/MSME_Certificate.png";
 import isoThumb from "../assets/ISO_Certificate.png";
+
+// PDF paths (served from public folder)
+const bronzePdf = "/certificates/Bronze.pdf";
+const bronzeReportPdf = "/certificates/Bronze_Report.pdf";
+const machineryListPdf = "/certificates/Machinery_List.pdf";
+const msmePdf = "/certificates/MSME_Certificate.pdf";
+const isoPdf = "/certificates/ISO_Certificate.pdf";
 
 const Certification = () => {
   const [selectedCert, setSelectedCert] = useState(null);
