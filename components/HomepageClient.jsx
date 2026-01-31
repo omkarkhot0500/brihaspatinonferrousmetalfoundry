@@ -217,7 +217,7 @@ export default function HomepageClient() {
                 </p>
 
                 <Link
-                  href="/products/GeneralEngineeringCasting"
+                  href="/products/generalengineeringcasting"
                   className="inline-flex text-amber-700 hover:text-amber-800 font-semibold text-sm tracking-wide"
                 >
                   Learn More →
