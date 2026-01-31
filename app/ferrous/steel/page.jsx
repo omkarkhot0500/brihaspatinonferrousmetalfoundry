@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Stainless Steel Casting | Brihaspati Non-Ferrous Metal Foundry",
   description:
-    "High-performance stainless steel castings for aerospace, marine, oil & gas, and chemical processing industries.",
+    "High-performance stainless steel and copper alloy castings for demanding industrial applications.",
 };
 
 export default function Steelcasting() {
@@ -35,7 +35,7 @@ export default function Steelcasting() {
               With a 10,000 sq. mt. state-of-the-art manufacturing facility
               located in Kittur, Belagavi, Karnataka, India, we operate as a
               trusted global supply chain partner for demanding applications,
-              ranging from marine and oil & gas to aerospace and chemical
+              ranging from marine and oil &amp; gas to aerospace and chemical
               processing.
             </p>
           </div>
@@ -102,38 +102,45 @@ export default function Steelcasting() {
                 non-destructive testing (X-ray, dye penetrant, ultrasonic),
                 heat treatment, metallurgical testing, welding, assembly,
                 pressure testing, and complete material traceability with
-                certificates of conformity.
+                certified test reports.
               </p>
             </div>
 
-            {/* Quality Standards */}
+            {/* Quality */}
             <div className="mb-8 md:mb-10">
               <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800">
-                ISO-Certified Quality &amp; Excellence
+                Quality Assurance, Reliability &amp; Trust
               </h3>
 
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                We maintain strict quality control at every stage of design,
-                production, and delivery. Our ISO 9001:2015 certification,
-                combined with advanced testing laboratories, ensures that every
-                casting meets the most demanding specifications. We possess
-                comprehensive traceability, full material certification, and
-                third-party testing capabilities.
+                Quality is engineered into every stage of our process. We
+                follow robust quality systems supported by advanced
+                statistical process control, first article inspection, and
+                simulation-based gating and risering design. Our on-site
+                metallurgical laboratory is equipped for chemical analysis
+                using a Metavision 1008i spectrometer and mechanical testing.
+              </p>
+
+              <p className="text-gray-700 leading-relaxed mt-4 text-sm sm:text-base">
+                With full traceability from raw material melt to final
+                shipment, we ensure consistent, repeatable quality that meets
+                global standards and customer specifications, making us a
+                reliable long-term manufacturing partner.
               </p>
             </div>
 
-            {/* Global Partner */}
-            <div>
+            {/* Customized Solutions */}
+            <div className="mb-6 md:mb-10">
               <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800">
-                Trusted Global Supply Chain Partner
+                Engineering Partnership &amp; Customized Solutions
               </h3>
 
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                With proven expertise serving aerospace, marine, oil &amp; gas,
-                power generation, chemical processing, and industrial equipment
-                sectors, we stand ready to support your most critical casting
-                requirements. Let Brihaspati be your trusted partner for
-                high-performance non-ferrous casting solutions.
+                We work closely with our customers from the design stage to
+                optimize castability, enhance performance, and reduce overall
+                costs. Our team delivers customized casting and machining
+                solutions tailored to specific application needs while
+                maintaining competitive pricing and on-time global delivery.
               </p>
             </div>
           </div>

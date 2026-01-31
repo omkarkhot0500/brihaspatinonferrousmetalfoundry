@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 export default function HomepageClient() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -224,61 +225,70 @@ export default function HomepageClient() {
               </div>
             </div>
 
-            {/* Service 2 */}
-            <div className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100">
-              <div className="relative overflow-hidden">
-                <img
-                  src="/images/CO2Casting.jpg"
-                  alt="Lost Wax Casting"
-                  className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">CO₂ Sand Casting</h3>
-                <p className="text-slate-600 mb-4 leading-relaxed">
-                  A precision sand casting process using CO₂-hardened molds to
-                  achieve excellent surface finish, dimensional accuracy, and
-                  consistent quality.
-                </p>
+            
 
-                <Link
-                  href="/products/CO2MouldCasting"
-                  className="inline-flex text-amber-700 hover:text-amber-800 font-semibold text-sm tracking-wide"
-                >
-                  Learn More →
-                </Link>
-              </div>
-            </div>
+{/* Service 2 */}
+<div className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100">
+  
+  {/* IMAGE WRAPPER — HEIGHT IS REQUIRED */}
+  <div className="relative h-60 overflow-hidden">
+    <Image
+      src="/assets/CO2Casting.jpg"
+      alt="CO₂ Sand Casting"
+      fill
+      className="object-cover transition-transform duration-500 group-hover:scale-110"
+    />
+    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+  </div>
+
+  <div className="p-6">
+    <h3 className="text-xl font-semibold mb-2">CO₂ Sand Casting</h3>
+    <p className="text-slate-600 mb-4 leading-relaxed">
+      A precision sand casting process using CO₂-hardened molds to achieve
+      excellent surface finish, dimensional accuracy, and consistent quality.
+    </p>
+
+    <Link
+      href="/products/CO2MouldCasting"
+      className="inline-flex text-amber-700 hover:text-amber-800 font-semibold text-sm tracking-wide"
+    >
+      Learn More →
+    </Link>
+  </div>
+</div>
+
 
             {/* Service 3 */}
-            <div className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100">
-              <div className="relative overflow-hidden">
-                <img
-                  src="/images/GravityCasting.png"
-                  alt="Feinguss"
-                  className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">
-                  Gravity Die Casting
-                </h3>
-                <p className="text-slate-600 mb-4 leading-relaxed">
-                  Metal casting using permanent molds and gravity filling to
-                  produce dense, high-quality components with excellent
-                  mechanical properties.
-                </p>
 
-                <Link
-                  href="/products/GravityDieCasting"
-                  className="inline-flex text-amber-700 hover:text-amber-800 font-semibold text-sm tracking-wide"
-                >
-                  Learn More →
-                </Link>
-              </div>
-            </div>
+<div className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100">
+  
+  {/* HEIGHT IS REQUIRED */}
+  <div className="relative h-60 overflow-hidden">
+    <Image
+      src="/assets/GravityCasting.png"
+      alt="Gravity Casting"
+      fill
+      className="object-cover transition-transform duration-500 group-hover:scale-110"
+    />
+    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+  </div>
+
+  <div className="p-6">
+    <h3 className="text-xl font-semibold mb-2">Gravity Die Casting</h3>
+    <p className="text-slate-600 mb-4 leading-relaxed">
+      Metal casting using permanent molds and gravity filling to produce dense,
+      high-quality components with excellent mechanical properties.
+    </p>
+
+    <Link
+      href="/products/GravityDieCasting"
+      className="inline-flex text-amber-700 hover:text-amber-800 font-semibold text-sm tracking-wide"
+    >
+      Learn More →
+    </Link>
+  </div>
+</div>
+
           </div>
         </div>
       </section>

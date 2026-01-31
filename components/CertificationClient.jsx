@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function CertificationClient() {
+export default function Certification() {
   const [selectedCert, setSelectedCert] = useState(null);
 
   const certifications = [
@@ -10,36 +10,36 @@ export default function CertificationClient() {
       id: "bronze",
       title: "ZED Bronze Certificate",
       description: "Government of India ZED bronze level certification.",
-      file: "/pdfs/Bronze.pdf",
-      thumbnail: "/images/Bronze.png",
+      file: "/assets/Bronze.pdf",
+      thumbnail: "/assets/Bronze.png",
     },
     {
       id: "bronze-report",
       title: "ZED Bronze Report",
       description: "Detailed assessment report for ZED bronze certification.",
-      file: "/pdfs/Bronze_Report.pdf",
-      thumbnail: "/images/Bronze_Report.png",
+      file: "/assets/Bronze_Report.pdf",
+      thumbnail: "/assets/Bronze_Report.png",
     },
     {
       id: "machinery",
       title: "Machinery List",
       description: "Approved list of machinery and equipment.",
-      file: "/pdfs/Machinery_List.pdf",
-      thumbnail: "/images/Machinery_List.png",
+      file: "/assets/Machinery_List.pdf",
+      thumbnail: "/assets/Machinery_List.png",
     },
     {
       id: "msme",
       title: "MSME Certificate",
       description: "Udyam registration / MSME certificate.",
-      file: "/pdfs/MSME_Certificate.pdf",
-      thumbnail: "/images/MSME_Certificate.png",
+      file: "/assets/MSME_Certificate.pdf",
+      thumbnail: "/assets/MSME_Certificate.png",
     },
     {
       id: "iso",
       title: "ISO Certificate",
       description: "ISO 9001:2015 quality management system certificate.",
-      file: "/pdfs/ISO_Certificate.pdf",
-      thumbnail: "/images/ISO_Certificate.png",
+      file: "/assets/ISO_Certificate.pdf",
+      thumbnail: "/assets/ISO_Certificate.png",
     },
   ];
 
@@ -64,9 +64,7 @@ export default function CertificationClient() {
               key={cert.id}
               type="button"
               onClick={() => setSelectedCert(cert)}
-              className="bg-white rounded-lg shadow-md overflow-hidden text-left group
-                         transition md:hover:scale-105 md:hover:shadow-xl"
-              aria-label={`Open ${cert.title}`}
+              className="bg-white rounded-lg shadow-md overflow-hidden text-left group transition md:hover:scale-105 md:hover:shadow-xl"
             >
               <div className="p-3 sm:p-4 border-b border-gray-200 bg-gray-50">
                 <h2 className="text-base sm:text-lg md:text-xl font-semibold text-center text-gray-800">
@@ -94,69 +92,46 @@ export default function CertificationClient() {
           ))}
         </div>
 
-        {/* Quality Commitment */}
-        <div className="mt-10 sm:mt-14 p-4 sm:p-6 bg-blue-900 text-white rounded-lg shadow-lg">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-4">
-            Our Quality Commitment
-          </h2>
-          <p className="text-sm sm:text-base md:text-lg">
-            Our optimum quality standards and global quality control procedures
-            are certified by national and international bodies. We are committed
-            to delivering the highest quality products and services to our
-            clients worldwide.
-          </p>
-        </div>
-
         {/* Modal */}
         {selectedCert && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-2">
-            <div className="bg-white w-full max-w-4xl rounded-lg shadow-xl relative flex flex-col max-h-[90vh]">
-              {/* Close (X) */}
+            <div className="bg-white w-full max-w-[95vw] h-[90vh] rounded-xl shadow-2xl relative flex flex-col">
               <button
-                type="button"
                 onClick={() => setSelectedCert(null)}
                 className="absolute right-3 top-3 text-2xl text-gray-500 hover:text-gray-800"
-                aria-label="Close"
               >
                 ×
               </button>
 
-              <div className="p-4 border-b">
-                <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-800">
+              <div className="px-6 py-4 border-b bg-gray-50">
+
+                <h3 className="text-lg font-semibold">
                   {selectedCert.title}
                 </h3>
               </div>
 
-              <div className="p-3 sm:p-4 flex-1 overflow-hidden">
+              <div className="flex-1 overflow-hidden">
+
                 <iframe
-                  src={selectedCert.file}
-                  title={selectedCert.title}
-                  className="w-full h-full border"
-                />
+  src={selectedCert.file}
+  title={selectedCert.title}
+  className="w-full h-full border-0"
+/>
+
               </div>
 
-              <div className="flex flex-wrap justify-end gap-2 p-4 border-t">
-                <button
-                  type="button"
-                  onClick={() => setSelectedCert(null)}
-                  className="px-4 py-2 text-sm sm:text-base rounded-md border border-gray-300 text-gray-700 hover:bg-gray-100"
-                >
-                  Close
-                </button>
-
+              <div className="flex justify-end gap-2 p-4 border-t">
                 <a
                   href={selectedCert.file}
                   download
-                  className="px-4 py-2 text-sm sm:text-base rounded-md bg-gray-800 text-white hover:bg-gray-900"
+                  className="px-4 py-2 bg-gray-800 text-white rounded"
                 >
                   Download
                 </a>
-
                 <a
                   href={selectedCert.file}
                   target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 text-sm sm:text-base rounded-md bg-blue-600 text-white hover:bg-blue-700"
+                  className="px-4 py-2 bg-blue-600 text-white rounded"
                 >
                   Open in New Tab
                 </a>
