@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Leading manufacturer of copper alloy and stainless steel alloy castings & machined components",
   icons: {
-    icon: "/icon.png",
+    icon: "/vite.svg",
   },
 };
 
