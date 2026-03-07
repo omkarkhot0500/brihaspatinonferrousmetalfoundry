@@ -4,19 +4,20 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function HomepageClient() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
-      image: "/images/1.jpg",
-      title: "Get the Best non-ferous Solutions from Us!",
+      image: "/assets/1.jpg",
+      title: "Get the Best Non-Ferrous Solutions from Us!",
       description:
         "High-quality metal casting solutions for all your industrial needs",
     },
     {
-      image: "/images/2.jpg",
+      image: "/assets/2.jpg",
       title: "Precision Engineering at Its Finest",
       description: "Expert craftsmanship with advanced technology",
     },
@@ -49,11 +50,10 @@ export default function HomepageClient() {
             <div
               key={index}
               className={`absolute inset-0 transition-opacity duration-700 ease-in-out
-          ${
-            isActive
-              ? "opacity-100 z-10 pointer-events-auto"
-              : "opacity-0 z-0 pointer-events-none"
-          }
+          ${isActive
+                  ? "opacity-100 z-10 pointer-events-auto"
+                  : "opacity-0 z-0 pointer-events-none"
+                }
         `}
             >
               {/* Background image */}
@@ -73,17 +73,32 @@ export default function HomepageClient() {
               {/* Content */}
               <div className="relative z-10 h-full flex items-center justify-center">
                 <div className="max-w-5xl mx-auto px-6 text-center">
-                  <p className="mb-4 inline-block rounded-full border border-amber-400/40 bg-black/40 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-amber-200/90">
+                  <motion.p 
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={isActive ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="mb-4 inline-block rounded-full border border-amber-400/40 bg-black/40 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-amber-200/90"
+                  >
                     Precision · Reliability · Quality
-                  </p>
+                  </motion.p>
 
-                  <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-white">
+                  <motion.h1 
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={isActive ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.6, delay: 0.3 }}
+                    className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-white"
+                  >
                     {slide.title}
-                  </h1>
+                  </motion.h1>
 
-                  <p className="mt-5 text-base sm:text-lg md:text-xl text-slate-200/90 max-w-2xl mx-auto leading-relaxed">
+                  <motion.p 
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={isActive ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.6, delay: 0.4 }}
+                    className="mt-5 text-base sm:text-lg md:text-xl text-slate-200/90 max-w-2xl mx-auto leading-relaxed"
+                  >
                     {slide.description}
-                  </p>
+                  </motion.p>
                 </div>
               </div>
             </div>
@@ -92,18 +107,26 @@ export default function HomepageClient() {
 
         {/* PREV BUTTON */}
         <button
-          onClick={prevSlide}
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            prevSlide();
+          }}
           aria-label="Previous slide"
-          className="z-30 absolute left-4 top-1/2 -translate-y-1/2 rounded-full border border-white/30 bg-black/30 p-2 text-white backdrop-blur-md hover:bg-black/60 transition"
+          className="z-[50] absolute left-4 top-1/2 -translate-y-1/2 rounded-full border border-white/30 bg-black/40 p-3 text-white backdrop-blur-md hover:bg-black/70 transition-all cursor-pointer active:scale-95"
         >
           <ChevronLeft className="h-6 w-6" />
         </button>
 
         {/* NEXT BUTTON */}
         <button
-          onClick={nextSlide}
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            nextSlide();
+          }}
           aria-label="Next slide"
-          className="z-30 absolute right-4 top-1/2 -translate-y-1/2 rounded-full border border-white/30 bg-black/30 p-2 text-white backdrop-blur-md hover:bg-black/60 transition"
+          className="z-[50] absolute right-4 top-1/2 -translate-y-1/2 rounded-full border border-white/30 bg-black/40 p-3 text-white backdrop-blur-md hover:bg-black/70 transition-all cursor-pointer active:scale-95"
         >
           <ChevronRight className="h-6 w-6" />
         </button>
@@ -116,11 +139,10 @@ export default function HomepageClient() {
               onClick={() => setCurrentSlide(i)}
               aria-label={`Go to slide ${i + 1}`}
               className={`h-2.5 rounded-full transition-all duration-300
-          ${
-            i === currentSlide
-              ? "w-8 bg-amber-400 shadow-[0_0_12px_rgba(251,191,36,0.8)]"
-              : "w-2.5 bg-white/40 hover:bg-white/70"
-          }
+          ${i === currentSlide
+                  ? "w-8 bg-amber-400 shadow-[0_0_12px_rgba(251,191,36,0.8)]"
+                  : "w-2.5 bg-white/40 hover:bg-white/70"
+                }
         `}
             />
           ))}
@@ -128,19 +150,29 @@ export default function HomepageClient() {
       </section>
 
       {/* QUALITY BANNER */}
-      <section className="bg-gradient-to-r from-amber-700 via-amber-600 to-amber-700 py-6 md:py-8 shadow-inner">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-r from-amber-700 via-amber-600 to-amber-700 py-6 md:py-8 shadow-inner overflow-hidden">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="container mx-auto px-4"
+        >
           <h2 className="text-2xl md:text-3xl font-semibold text-white text-center tracking-tight">
             Get Products to Perfection with Severe Quality Control Applied at
             All Levels
           </h2>
-        </div>
+        </motion.div>
       </section>
 
       {/* COMPANY INFO */}
       <section className="py-12 md:py-16 bg-gradient-to-b from-slate-50 to-slate-100">
         <div className="container mx-auto px-4">
-          <div className="md:grid-cols-2 gap-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="md:grid-cols-2 gap-8"
+          >
             <div className="relative overflow-hidden rounded-2xl border border-white/70 bg-white/90 shadow-xl shadow-slate-400/20 backdrop-blur">
               <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500" />
               <div className="px-6 py-8 md:px-8 md:py-10">
@@ -150,14 +182,14 @@ export default function HomepageClient() {
                 <div className="flex flex-col md:flex-row items-start gap-6">
                   <div className="w-full md:w-1/3 overflow-hidden rounded-xl">
                     <img
-                      src="/images/company-building.jpg"
-                      alt="brishpathi Cast Facility"
+                      src="/assets/StainlessCasting.png"
+                      alt="Brihaspati Cast Facility"
                       className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
                     />
                   </div>
                   <div>
                     <p className="text-slate-600 mb-6 leading-relaxed">
-                      At Brishpathi Cast Pvt. Ltd., we specialize in
+                      At Brihaspati Cast Pvt. Ltd., we specialize in
                       manufacturing non-ferrous sand castings including CO₂ sand
                       casting and no-bake mold casting, gravity die casting,
                       shell mold casting, and centrifugal casting in copper
@@ -177,7 +209,7 @@ export default function HomepageClient() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -197,16 +229,30 @@ export default function HomepageClient() {
             centrifugal casting solutions, we deliver consistent,
             high-performance components for demanding industries.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={{
+              visible: { transition: { staggerChildren: 0.2 } },
+              hidden: {}
+            }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          >
             {/* Service 1 */}
-            <div className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100">
-              <div className="relative overflow-hidden">
+            <motion.div 
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 }
+              }}
+              className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100"
+            >
+              <div className="relative h-64 p-6 bg-slate-50 overflow-hidden flex items-center justify-center">
                 <img
                   src="/images/StainlessCasting.png"
                   alt="Non-Ferrous Casting"
-                  className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Stainless Steel</h3>
@@ -223,19 +269,26 @@ export default function HomepageClient() {
                   Learn More →
                 </Link>
               </div>
-            </div>
+            </motion.div>
 
             {/* Service 2 */}
-            <div className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100">
+            <motion.div 
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 }
+              }}
+              className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100"
+            >
               {/* IMAGE WRAPPER — HEIGHT IS REQUIRED */}
-              <div className="relative h-60 overflow-hidden">
-                <Image
-                  src="/assets/CO2Casting.jpg"
-                  alt="CO₂ Sand Casting"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative h-64 p-6 bg-slate-50 overflow-hidden flex items-center justify-center">
+                <div className="relative h-full w-full">
+                  <Image
+                    src="/assets/CO2Casting.jpg"
+                    alt="CO₂ Sand Casting"
+                    fill
+                    className="object-contain transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
               </div>
 
               <div className="p-6">
@@ -253,20 +306,27 @@ export default function HomepageClient() {
                   Learn More →
                 </Link>
               </div>
-            </div>
+            </motion.div>
 
             {/* Service 3 */}
 
-            <div className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100">
+            <motion.div 
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 }
+              }}
+              className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100"
+            >
               {/* HEIGHT IS REQUIRED */}
-              <div className="relative h-60 overflow-hidden">
-                <Image
-                  src="/assets/GravityCasting.png"
-                  alt="Gravity Casting"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative h-64 p-6 bg-slate-50 overflow-hidden flex items-center justify-center">
+                <div className="relative h-full w-full">
+                  <Image
+                    src="/assets/GravityCasting.png"
+                    alt="Gravity Casting"
+                    fill
+                    className="object-contain transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
               </div>
 
               <div className="p-6">
@@ -286,8 +346,8 @@ export default function HomepageClient() {
                   Learn More →
                 </Link>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 

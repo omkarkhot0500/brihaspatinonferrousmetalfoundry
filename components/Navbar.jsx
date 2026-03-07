@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
-          <img src="/images/logo.png" alt="Brihaspati Logo" className="h-10 md:h-12" />
+          <img src="/icon.png" alt="Brihaspati Logo" className="h-10 md:h-12" />
         </Link>
 
         {/* ================= DESKTOP NAV ================= */}

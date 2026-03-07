@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { MotionDiv, MotionSection, MotionH1, fadeIn, staggerContainer } from "@/components/MotionWrapper";
 
 export const metadata = {
   title: "Centrifugal Casting | Brihaspati Non-Ferrous Metal Foundry",
@@ -19,10 +20,14 @@ export default function CentrifugalCasting() {
   ];
 
   const ImageGrid = ({ images, alt }) => (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <MotionDiv 
+      {...staggerContainer}
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+    >
       {images.map((img, i) => (
-        <div
+        <MotionDiv
           key={i}
+          variants={fadeIn}
           className="border rounded-lg bg-white shadow-sm hover:shadow-md transition duration-300 flex items-center justify-center overflow-hidden"
         >
           <div className="relative w-full h-40 sm:h-48 md:h-56 lg:h-64 bg-gray-50">
@@ -34,25 +39,29 @@ export default function CentrifugalCasting() {
               loading="lazy"
             />
           </div>
-        </div>
+        </MotionDiv>
       ))}
-    </div>
+    </MotionDiv>
   );
 
   return (
-    <div className="font-sans text-gray-800">
+    <div className="font-sans text-gray-800 overflow-hidden">
       <header className="bg-gradient-to-r from-gray-800 to-gray-700 text-white py-6 sm:py-8 md:py-12 px-4">
         <div className="container mx-auto">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center leading-tight">
+          <MotionH1 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center leading-tight"
+          >
             Centrifugal Casting and Machined Components
-          </h1>
+          </MotionH1>
         </div>
       </header>
 
       <main className="container mx-auto px-4 sm:px-6 md:px-8 py-8 md:py-12">
         <section className="mb-16 space-y-16">
           {/* Copper Alloy */}
-          <div>
+          <MotionDiv {...fadeIn}>
             <h2 className="text-xl sm:text-2xl font-semibold mb-4">
               Copper Alloy Casting and Machined Components
             </h2>
@@ -67,10 +76,10 @@ export default function CentrifugalCasting() {
               images={copperImages}
               alt="Copper Alloy Centrifugal Casting"
             />
-          </div>
+          </MotionDiv>
 
           {/* Stainless Steel */}
-          <div>
+          <MotionDiv {...fadeIn}>
             <h2 className="text-xl sm:text-2xl font-semibold mb-4">
               Stainless Steel Casting and Machined Components
             </h2>
@@ -85,7 +94,7 @@ export default function CentrifugalCasting() {
               images={stainlessImages}
               alt="Stainless Steel Centrifugal Casting"
             />
-          </div>
+          </MotionDiv>
         </section>
       </main>
     </div>

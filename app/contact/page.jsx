@@ -14,7 +14,7 @@ export default function Contact() {
         <div className="w-full bg-gray-900 py-16 relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <img
-              src="/api/placeholder/1200/300"
+              src="/assets/1.jpg"
               alt="Foundry background"
               className="w-full h-full object-cover"
             />

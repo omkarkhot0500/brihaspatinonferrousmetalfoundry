@@ -49,8 +49,8 @@ const Form = () => {
 
     emailjs
       .send(
-        "service_846meoc",
-        "template_vjj22lq",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         {
           user_name: formData.name,
           user_companyname: formData.companyName,
@@ -58,7 +58,7 @@ const Form = () => {
           user_phone: formData.phone,
           message: formData.message,
         },
-        "623nyBirJFx7iuR6Q"
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(() => {
         toast.success("Message sent successfully!");
