@@ -35,10 +35,10 @@ const Navbar = () => {
               <Link href="/about" className="block px-4 py-2 hover:bg-gray-50">
                 Our Process
               </Link>
-              <Link href="/about" className="block px-4 py-2 hover:bg-gray-50">
+              <Link href="/company/quality-control" className="block px-4 py-2 hover:bg-gray-50">
                 Quality Control
               </Link>
-              <Link href="/about" className="block px-4 py-2 hover:bg-gray-50">
+              <Link href="/company/mission-vision" className="block px-4 py-2 hover:bg-gray-50">
                 Mission & Vision
               </Link>
             </div>
@@ -172,8 +172,8 @@ const Navbar = () => {
             {mobileCompanyOpen && (
               <div className="ml-4 flex flex-col gap-2 text-sm">
                 <Link href="/about">Our Process</Link>
-                <Link href="/about">Quality Control</Link>
-                <Link href="/about">Mission & Vision</Link>
+                <Link href="/company/quality-control">Quality Control</Link>
+                <Link href="/company/mission-vision">Mission & Vision</Link>
               </div>
             )}
 
