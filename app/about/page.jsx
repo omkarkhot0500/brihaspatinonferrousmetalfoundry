@@ -37,7 +37,7 @@ export default function About() {
 
             <p className="text-gray-700 leading-relaxed">
               With a 10,000 sq. mt. facility in Kittur, Belagavi, Karnataka, we
-              combine modern infrastructure, skilled professionals, and strict
+              combine modern infrastructure skilled professionals, and strict
               quality control to support customers across global markets.
             </p>
           </div>
