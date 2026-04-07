@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { MotionDiv, MotionSection, MotionH1, fadeIn, staggerContainer } from "@/components/MotionWrapper";
+import { constructMetadata } from "@/lib/metadata";
 
-export const metadata = {
-  title: "No-Bake Mould Casting | Brihaspati Non-Ferrous Metal Foundry",
-  description:
-    "Versatile no-bake mould casting for large and complex castings with excellent mold strength.",
-};
+export const metadata = constructMetadata({
+  title: "No-Bake Mould Casting Manufacturer India | Brihaspati Foundry",
+  description: "Specialized no-bake mould casting for large and complex industrial components. High-strength copper alloy and stainless steel castings in Belagavi, Karnataka.",
+  keywords: ["no-bake mould casting", "sand casting manufacturer India", "large metal casting", "industrial components Karnataka", "precision foundry solutions"],
+  url: "https://brihaspatinonferrousmetalfoundry.vercel.app/products/NoBakeMouldCasting"
+});
 
 export default function NoBakeMouldCasting() {
   const copperImages = [
@@ -56,7 +58,7 @@ export default function NoBakeMouldCasting() {
             animate={{ opacity: 1, y: 0 }}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center"
           >
-            No Bake Mould Casting and Machined Components
+            No-Bake Mould Casting Manufacturer India
           </MotionH1>
         </div>
       </header>
