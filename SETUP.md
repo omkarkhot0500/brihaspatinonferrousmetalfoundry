@@ -10,7 +10,7 @@ mkdir -p public/pdfs
 
 ## Step 2: Copy Images
 ```bash
-# Copy root level images
+# Copy root level images.
 cp src/assets/*.{jpg,jpeg,png,webp,avif} public/images/ 2>/dev/null || true
 
 # Copy subdirectory images
