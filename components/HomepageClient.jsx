@@ -82,14 +82,14 @@ export default function HomepageClient() {
                     Precision · Reliability · Quality
                   </motion.p>
 
-                  <motion.h1 
+                  <motion.h2 
                     initial={{ opacity: 0, y: 20 }}
                     animate={isActive ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
                     className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-white"
                   >
                     {slide.title}
-                  </motion.h1>
+                  </motion.h2>
 
                   <motion.p 
                     initial={{ opacity: 0, y: 20 }}
@@ -183,7 +183,7 @@ export default function HomepageClient() {
                   <div className="w-full md:w-1/3 overflow-hidden rounded-xl">
                     <img
                       src="/assets/StainlessCasting.png"
-                      alt="Brihaspati Cast Facility"
+                      alt="Brihaspati Non-Ferrous Metal Foundry - Stainless Steel Casting"
                       className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
                     />
                   </div>
@@ -248,11 +248,11 @@ export default function HomepageClient() {
               className="group bg-white rounded-2xl shadow-md shadow-slate-300/40 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-400/20 border border-slate-100"
             >
               <div className="relative h-64 p-6 bg-slate-50 overflow-hidden flex items-center justify-center">
-                <img
-                  src="/images/StainlessCasting.png"
-                  alt="Non-Ferrous Casting"
-                  className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
-                />
+                  <img
+                    src="/images/StainlessCasting.png"
+                    alt="Precision Non-Ferrous Casting India"
+                    className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                  />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Stainless Steel</h3>
@@ -284,7 +284,7 @@ export default function HomepageClient() {
                 <div className="relative h-full w-full">
                   <Image
                     src="/assets/CO2Casting.jpg"
-                    alt="CO₂ Sand Casting"
+                    alt="CO2 Sand Casting Manufacturer Karnataka"
                     fill
                     className="object-contain transition-transform duration-500 group-hover:scale-105"
                   />
@@ -322,7 +322,7 @@ export default function HomepageClient() {
                 <div className="relative h-full w-full">
                   <Image
                     src="/assets/GravityCasting.png"
-                    alt="Gravity Casting"
+                    alt="Gravity Die Casting Belagavi India"
                     fill
                     className="object-contain transition-transform duration-500 group-hover:scale-105"
                   />
@@ -355,7 +355,7 @@ export default function HomepageClient() {
       <section className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 via-white to-slate-100">
         <div className="mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold text-slate-800 mb-4 leading-tight">
-            Non-Ferrous Casting Manufacturers &amp; Suppliers
+            Aluminium & Non-Ferrous Casting Manufacturer in India
           </h1>
           <div className="h-1 w-full max-w-md bg-gradient-to-r from-amber-500 via-amber-300 to-amber-500 mb-8 rounded-full" />
           <p className="text-slate-600 mb-8 leading-relaxed text-justify">

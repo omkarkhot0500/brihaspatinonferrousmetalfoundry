@@ -3,8 +3,10 @@ import { constructMetadata } from "@/lib/metadata";
 import { MotionDiv, MotionSection, MotionH1, fadeIn, staggerContainer } from "@/components/MotionWrapper";
 
 export const metadata = constructMetadata({
-  title: "Industrial Valve Casting",
-  description: "Precision-engineered valve castings in stainless steel and copper alloys for critical pressure applications. High-quality foundry solutions in India.",
+  title: "Industrial Valve Casting Manufacturer in India",
+  description: "Precision-engineered valve castings in stainless steel and copper alloys for critical pressure applications. Leading foundry in Kittur, Belagavi.",
+  keywords: ["valve casting India", "butterfly valve casting manufacturer", "check valve casting", "pressure relief valve components", "Belagavi foundry"],
+  url: "https://brihaspatinonferrousmetalfoundry.vercel.app/products/valve"
 });
 
 
@@ -64,7 +66,7 @@ export default function ValveCasting() {
             animate={{ opacity: 1, y: 0 }}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center leading-tight"
           >
-            Valve Casting
+            Industrial Valve Casting Manufacturer
           </MotionH1>
         </div>
       </header>
