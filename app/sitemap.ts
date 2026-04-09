@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://brihaspatinonferrousmetalfoundry.vercel.app";
+  const baseUrl = "https://www.brihaspatialloys.in";
   
   return [
     {

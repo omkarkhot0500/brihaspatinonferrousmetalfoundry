@@ -20,6 +20,6 @@ export default function robots() {
         ]
       }
     ],
-    sitemap: "https://brihaspatinonferrousmetalfoundry.vercel.app/sitemap.xml"
+    sitemap: "https://www.brihaspatialloys.in/sitemap.xml"
   };
 }
