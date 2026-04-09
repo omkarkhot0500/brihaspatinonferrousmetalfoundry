@@ -18,11 +18,11 @@ export default function About() {
           {/* Left Content */}
           <div className="md:col-span-2">
             <h2 className="text-2xl font-semibold mb-4">
-              About Brihaspati Non Ferrous Metal Foundry
+              About Brihaspati Non-Ferrous Metal Foundry
             </h2>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Established in 2023, Brihaspati Non Ferrous Metal Foundry is a
+              Established in 2023, Brihaspati Non-Ferrous Metal Foundry is a
               technologically advanced manufacturing unit specializing in
               high-integrity non-ferrous and stainless steel castings. We focus
               on delivering precision-engineered components that meet global

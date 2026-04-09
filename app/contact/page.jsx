@@ -42,10 +42,8 @@ export default function Contact() {
                     Brihaspati Non-Ferrous Metal Foundry
                   </h3>
                   <div className="mt-2 text-gray-600 space-y-1">
-                    <p>Plot No. 70, Road No. 8</p>
-                    <p>KIADB Industrial Area</p>
-                    <p>Kittur, Belagavi – 591115</p>
-                    <p>Karnataka, India</p>
+                    <p>Plot No. 70, Road No. 8, KIADB Industrial Area</p>
+                    <p>Kittur, Belagavi, Karnataka 591115</p>
                   </div>
                 </div>
               </div>
@@ -57,7 +55,7 @@ export default function Contact() {
                     📞
                   </div>
                 </div>
-                <div className="text-gray-600">+91 83104 32701</div>
+                <div className="text-gray-600">+91 8310432701</div>
               </div>
 
               {/* Email */}

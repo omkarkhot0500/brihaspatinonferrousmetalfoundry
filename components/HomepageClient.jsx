@@ -12,14 +12,14 @@ export default function HomepageClient() {
   const slides = [
     {
       image: "/assets/1.jpg",
-      title: "Get the Best Non-Ferrous Solutions from Us!",
+      title: "Non-Ferrous Metal Foundry in Kittur, Belagavi",
       description:
-        "High-quality metal casting solutions for all your industrial needs",
+        "We are a leading Non-Ferrous Metal Foundry in Kittur, Belagavi, Karnataka, specializing in stainless steel casting, copper alloy casting, CO2 sand casting, gravity die casting, and industrial metal components manufacturing.",
     },
     {
       image: "/assets/2.jpg",
-      title: "Precision Engineering at Its Finest",
-      description: "Expert craftsmanship with advanced technology",
+      title: "Stainless Steel & Copper Alloy Casting Excellence",
+      description: "High-quality casting solutions in Kittur, Belagavi tailored to your industrial requirements.",
     },
   ];
 
@@ -522,6 +522,46 @@ export default function HomepageClient() {
         </div>
       </section>
 
+      {/* SERVICES KEYWORDS SECTION */}
+      <section className="py-12 bg-slate-50 border-y border-slate-200">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl font-bold text-slate-800 mb-8">Specialized Casting Services</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            {[
+              "Non-Ferrous Casting",
+              "Stainless Steel Casting",
+              "Copper Alloy Casting",
+              "CO2 Sand Casting",
+              "Gravity Die Casting",
+              "Shell Mold Casting",
+              "Centrifugal Casting",
+            ].map((keyword) => (
+              <span key={keyword} className="bg-white px-4 py-2 rounded-lg border border-slate-200 text-slate-700 font-medium shadow-sm">
+                {keyword}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* REVIEWS SECTION */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-slate-800 mb-6">Customer Reviews</h2>
+          <div className="max-w-xl mx-auto p-8 rounded-2xl bg-amber-50 border border-amber-100 shadow-sm">
+            <div className="flex justify-center mb-4">
+              {[...Array(5)].map((_, i) => (
+                <span key={i} className="text-amber-400 text-2xl">★</span>
+              ))}
+            </div>
+            <p className="text-xl font-bold text-slate-800 mb-2">⭐ 5.0 Rating</p>
+            <p className="text-slate-600">
+              based on customer reviews on Google and platforms like IndiaMART and Justdial.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* BENEFITS SECTION */}
       <section
         id="contact"
@@ -533,7 +573,7 @@ export default function HomepageClient() {
           </h2>
 
           <p className="text-slate-300 mb-4 leading-relaxed">
-            Brihaspati Non Ferrous Metal Foundry is a rapidly growing
+            Brihaspati Non-Ferrous Metal Foundry is a rapidly growing
             manufacturer of high-integrity non-ferrous and stainless steel
             castings in India. We focus on delivering reliable,
             precision-engineered components that meet stringent quality and
@@ -624,6 +664,20 @@ export default function HomepageClient() {
               </span>
             </li>
           </ul>
+        </div>
+
+        {/* GOOGLE MAP EMBED */}
+        <div className="mt-16 max-w-5xl mx-auto overflow-hidden rounded-2xl shadow-2xl border-4 border-slate-800">
+          <iframe
+            src="https://www.google.com/maps?q=Brihaspati+Non-Ferrous+Metal+Foundry+Kittur+Belagavi&output=embed"
+            width="100%"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Brihaspati Non-Ferrous Metal Foundry Location"
+          ></iframe>
         </div>
       </section>
     </>
