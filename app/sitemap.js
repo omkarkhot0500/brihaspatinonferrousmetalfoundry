@@ -1,7 +1,7 @@
 import { locations } from "@/lib/locations";
 
 export default function sitemap() {
-  const baseUrl = "https://brihaspati.com";
+  const baseUrl = "https://www.brihaspatialloys.in";
 
   // Core Pages
   const corePages = ["", "/about", "/contact", "/certification", "/application"];

@@ -12,9 +12,9 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Brihaspati Non-Ferrous Metal Foundry",
-    "url": "https://brihaspati.com",
-    "logo": "https://brihaspati.com/images/logo.png",
-    "image": "https://brihaspati.com/assets/1.jpg",
+    "url": "https://www.brihaspatialloys.in",
+    "logo": "https://www.brihaspatialloys.in/images/logo.png",
+    "image": "https://www.brihaspatialloys.in/assets/1.jpg",
     "description": "Brihaspati Non-Ferrous Metal Foundry in Kittur, Belagavi offers high-quality stainless steel, copper alloy, and industrial casting solutions.",
     "address": {
       "@type": "PostalAddress",

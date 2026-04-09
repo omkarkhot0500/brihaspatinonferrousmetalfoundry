@@ -237,7 +237,7 @@ export const metadata = {
 
 ##### 5. Set Custom Domain
 1. In Vercel dashboard, go to "Settings" → "Domains"
-2. Add your custom domain (e.g., `brihaspati.com`)
+2. Add your custom domain (e.g., `www.brihaspatialloys.in`)
 3. Follow DNS instructions provided
 4. Update DNS records with your domain registrar
 5. Verify domain activation (usually within 24-48 hours)
@@ -481,8 +481,8 @@ PostCSS processing for Tailwind and autoprefixer
 ## 📞 Contact & Support
 
 For questions about this conversion or Next.js implementation:
-- Original site: [Brihaspati Non-Ferrous Metal Foundry](https://brihaspati.com)
-- Email: info@brihaspatifoundry.com
+- Original site: [Brihaspati Non-Ferrous Metal Foundry](https://www.brihaspatialloys.in)
+- Email: info@brihaspatialloys.in
 - Phone: +91 83104 32701
 - Location: Kittur, Belagavi, Karnataka, India
 

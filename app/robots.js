@@ -5,6 +5,6 @@ export default function robots() {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://brihaspati.com/sitemap.xml",
+    sitemap: "https://www.brihaspatialloys.in/sitemap.xml",
   };
 }
