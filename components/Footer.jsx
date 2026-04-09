@@ -54,24 +54,16 @@ const Footer = () => {
 
           {/* Contact */}
           <div className="text-center sm:text-left sm:col-span-2 md:col-span-1">
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-            <address className="not-italic text-gray-300 space-y-3 text-sm sm:text-base">
-              <p className="flex items-start sm:items-center justify-center sm:justify-start gap-2">
-                <Phone className="h-5 w-5 flex-shrink-0" />
-                <span>+91 83104 32701</span>
+            <h3 className="text-xl font-bold mb-4">Contact Details</h3>
+            <div className="text-gray-300 text-sm sm:text-base space-y-2">
+              <p className="font-bold text-white">Brihaspati Non-Ferrous Metal Foundry</p>
+              <p>Plot No. 70, Road No. 8, KIADB Industrial Area, Kittur, Belagavi, Karnataka 591115</p>
+              <p>Phone: +91 8310432701</p>
+              <p className="flex items-center justify-center sm:justify-start gap-2 pt-2">
+                <Mail className="h-4 w-4 flex-shrink-0" />
+                <span className="text-sm">info@brihaspatifoundry.com</span>
               </p>
-              <p className="flex items-start sm:items-center justify-center sm:justify-start gap-2">
-                <MapPin className="h-5 w-5 flex-shrink-0" />
-                <span>
-                  Plot No. 70, Road No. 8, KIADB Industrial Area, Kittur, Belagavi
-                  591115
-                </span>
-              </p>
-              <p className="flex items-start sm:items-center justify-center sm:justify-start gap-2">
-                <Mail className="h-5 w-5 flex-shrink-0" />
-                <span>info@brihaspatifoundry.com</span>
-              </p>
-            </address>
+            </div>
           </div>
         </div>
 

@@ -10,22 +10,27 @@ export const metadata = constructMetadata();
 export default function RootLayout({ children }) {
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Brihaspati Cast Pvt. Ltd.",
+    "@type": "LocalBusiness",
+    "name": "Brihaspati Non-Ferrous Metal Foundry",
     "url": "https://brihaspati.com",
     "logo": "https://brihaspati.com/images/logo.png",
-    "description": "Leading manufacturer of ferrous & non-ferrous lost wax castings and industrial components.",
+    "image": "https://brihaspati.com/assets/1.jpg",
+    "description": "Brihaspati Non-Ferrous Metal Foundry in Kittur, Belagavi offers high-quality stainless steel, copper alloy, and industrial casting solutions.",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Plot No. 70, Road No. 8, KIADB Industrial Area",
       "addressLocality": "Kittur",
       "addressRegion": "Karnataka",
+      "postalCode": "591115",
       "addressCountry": "India"
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91 83104 32701",
-      "contactType": "customer service"
-    }
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 15.6033,
+      "longitude": 74.7820
+    },
+    "telephone": "+91 8310432701",
+    "areaServed": "Kittur, Belagavi"
   };
 
   return (
