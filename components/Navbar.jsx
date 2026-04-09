@@ -46,10 +46,10 @@ const Navbar = () => {
 
           {/* Casting Materials */}
           <div className="relative group">
-            <span className="flex items-center cursor-pointer hover:text-amber-500">
+            <Link href="/casting-material" className="flex items-center cursor-pointer hover:text-amber-500">
               Casting Materials
               <ChevronRight className="h-4 w-4 ml-1 rotate-90" />
-            </span>
+            </Link>
             <div className="absolute left-0 top-full hidden group-hover:block w-56 bg-white rounded-md shadow-lg py-2">
               <Link
                 href="/ferrous/steel"
@@ -80,10 +80,10 @@ const Navbar = () => {
 
           {/* Products */}
           <div className="relative group">
-            <span className="flex items-center cursor-pointer hover:text-amber-500">
+            <Link href="/products" className="flex items-center cursor-pointer hover:text-amber-500">
               Products
               <ChevronRight className="h-4 w-4 ml-1 rotate-90" />
-            </span>
+            </Link>
             <div className="absolute left-0 top-full hidden group-hover:block w-72 bg-white rounded-md shadow-lg py-2">
               <Link
                 href="/products/valve"

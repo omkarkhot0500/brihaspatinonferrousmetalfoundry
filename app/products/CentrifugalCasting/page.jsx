@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { MotionDiv, MotionSection, MotionH1, fadeIn, staggerContainer } from "@/components/MotionWrapper";
+import { constructMetadata } from "@/lib/metadata";
 
-export const metadata = {
-  title: "Centrifugal Casting | Brihaspati Non-Ferrous Metal Foundry",
-  description:
-    "High-integrity centrifugal castings with superior density and mechanical properties.",
-};
+export const metadata = constructMetadata({
+  title: "Centrifugal Casting Manufacturer in India | Brihaspati Foundry",
+  description: "High-integrity centrifugal castings with superior density and mechanical properties. Specialized in copper alloy and stainless steel centrifugal casting in Kittur, Belagavi.",
+  keywords: ["centrifugal casting India", "vertical centrifugal casting", "industrial sleeve manufacturer", "copper alloy centrifugal casting", "Belagavi metal foundry"],
+  url: "https://brihaspatinonferrousmetalfoundry.vercel.app/products/CentrifugalCasting"
+});
 
 export default function CentrifugalCasting() {
   const copperImages = [
@@ -53,7 +55,7 @@ export default function CentrifugalCasting() {
             animate={{ opacity: 1, y: 0 }}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center leading-tight"
           >
-            Centrifugal Casting and Machined Components
+            Centrifugal Casting Manufacturer India
           </MotionH1>
         </div>
       </header>

@@ -35,18 +35,18 @@ export default function QualityControl() {
     <div className="font-sans text-gray-800 overflow-hidden">
       <header className="bg-gradient-to-r from-gray-800 to-gray-700 text-white py-12 md:py-20 px-4">
         <div className="container mx-auto">
-          <MotionH1 
+          <MotionH1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-3xl md:text-5xl lg:text-6xl font-bold text-center leading-tight mb-4"
           >
             Quality Without Compromise
           </MotionH1>
-          <MotionDiv 
-             initial={{ opacity: 0 }}
-             animate={{ opacity: 1 }}
-             transition={{ delay: 0.2 }}
-             className="w-24 h-1 bg-amber-500 mx-auto"
+          <MotionDiv
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="w-27 h-1 bg-amber-500 mx-auto"
           />
         </div>
       </header>
@@ -60,12 +60,12 @@ export default function QualityControl() {
             </p>
           </MotionSection>
 
-          <MotionDiv 
+          <MotionDiv
             {...staggerContainer}
             className="grid grid-cols-1 md:grid-cols-2 gap-8"
           >
             {qualitySteps.map((step, index) => (
-              <MotionDiv 
+              <MotionDiv
                 key={index}
                 variants={fadeIn}
                 className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-amber-500 hover:shadow-xl transition-shadow duration-300"
@@ -99,8 +99,8 @@ export default function QualityControl() {
               </ul>
             </div>
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
-               <img src="/assets/1.jpg" alt="Testing Facility" className="object-cover w-full h-full" />
-               <div className="absolute inset-0 bg-amber-500/10 mix-blend-multiply" />
+              <img src="/assets/1.jpg" alt="Testing Facility" className="object-cover w-full h-full" />
+              <div className="absolute inset-0 bg-amber-500/10 mix-blend-multiply" />
             </div>
           </div>
         </MotionSection>
