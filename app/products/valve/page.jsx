@@ -89,9 +89,9 @@ export default function ValveCasting() {
         <section className="mb-16 space-y-16">
           <MotionDiv {...fadeIn}>
             <h2 className="text-xl sm:text-2xl font-semibold mb-6">
-              Nickel Aluminium Bronze Casting
+              Nickel Copper Bronze Casting
             </h2>
-            <ImageGrid images={NABImages} alt="Nickel Aluminium Bronze Casting" />
+            <ImageGrid images={NABImages} alt="Nickel Copper Bronze Casting" />
           </MotionDiv>
 
           <MotionDiv {...fadeIn}>

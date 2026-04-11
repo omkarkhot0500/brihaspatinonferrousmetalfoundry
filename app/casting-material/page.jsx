@@ -1,8 +1,8 @@
 export const generateMetadata = () => ({
   title: "Casting Materials & Alloys | Brihaspati Non-Ferrous Metal Foundry",
-  description: "Explore our range of premium casting materials including aluminium, bronze, and brass alloys for precision industrial applications.",
+  description: "Explore our range of premium casting materials including copper, bronze, and brass alloys for precision industrial applications.",
   keywords: [
-    "aluminium alloy casting",
+    "copper alloy casting",
     "bronze material casting",
     "brass components manufacturing",
     "non-ferrous metal alloys",
@@ -13,7 +13,7 @@ export const generateMetadata = () => ({
   },
   openGraph: {
     title: "Casting Materials & Alloys | Brihaspati Non-Ferrous Metal Foundry",
-    description: "Explore our range of premium casting materials including aluminium, bronze, and brass alloys for precision industrial applications.",
+    description: "Explore our range of premium casting materials including copper, bronze, and brass alloys for precision industrial applications.",
     url: "https://brihaspatinonferrousmetalfoundry.vercel.app/casting-material",
     siteName: "Brihaspati Non-Ferrous Metal Foundry",
     images: [

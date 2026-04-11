@@ -2,7 +2,7 @@ export const generateMetadata = () => ({
   title: "Precision Metal Casting Products | Brihaspati Foundry",
   description: "Explore our range of high-quality casting products including valve casting, centrifugal casting, and custom engineering solutions.",
   keywords: [
-    "aluminium castings",
+    "copper castings",
     "bronze casting manufacturer",
     "brass casting India",
     "custom metal casting",
