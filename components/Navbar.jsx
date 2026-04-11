@@ -12,11 +12,13 @@ const Navbar = () => {
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        {/* Logo */}
+<header className="sticky top-0 z-50 bg-white shadow-md py-2 sm:py-3 md:py-4">
+  <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/">
-          <img src="/icon.png" alt="Brihaspati Logo" className="h-10 md:h-12" />
+<img 
+  src="/icon.png" 
+  alt="Brihaspati Logo" 
+className="h-16 sm:h-18 md:h-20 w-auto object-contain"/>
         </Link>
 
         {/* ================= DESKTOP NAV ================= */}
