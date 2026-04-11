@@ -355,7 +355,7 @@ export default function HomepageClient() {
       <section className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 via-white to-slate-100">
         <div className="mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold text-slate-800 mb-4 leading-tight">
-            Aluminium & Non-Ferrous Casting Manufacturer in India
+            Copper & Non-Ferrous Casting Manufacturer in India
           </h1>
           <div className="h-1 w-full max-w-md bg-gradient-to-r from-amber-500 via-amber-300 to-amber-500 mb-8 rounded-full" />
           <p className="text-slate-600 mb-8 leading-relaxed text-justify">

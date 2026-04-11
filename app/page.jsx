@@ -1,10 +1,10 @@
 import HomepageClient from "@/components/HomepageClient";
 
 export const generateMetadata = () => ({
-  title: "Aluminium Casting Manufacturer in Karnataka | Brihaspati Foundry",
-  description: "Leading non-ferrous metal casting manufacturer in Kittur, Belagavi. High-quality aluminium, bronze & brass castings.",
+  title: "Copper Casting Manufacturer in Karnataka | Brihaspati Foundry",
+  description: "Leading non-ferrous metal casting manufacturer in Kittur, Belagavi. High-quality copper, bronze & brass castings.",
   keywords: [
-    "aluminium casting Karnataka",
+    "copper casting Karnataka",
     "non ferrous foundry India",
     "metal casting Belagavi",
     "CO2 casting manufacturer",
@@ -15,8 +15,8 @@ export const generateMetadata = () => ({
     canonical: "https://brihaspatinonferrousmetalfoundry.vercel.app/",
   },
   openGraph: {
-    title: "Aluminium Casting Manufacturer in Karnataka | Brihaspati Foundry",
-    description: "Leading non-ferrous metal casting manufacturer in Kittur, Belagavi. High-quality aluminium, bronze & brass castings.",
+    title: "Copper Casting Manufacturer in Karnataka | Brihaspati Foundry",
+    description: "Leading non-ferrous metal casting manufacturer in Kittur, Belagavi. High-quality copper, bronze & brass castings.",
     url: "https://brihaspatinonferrousmetalfoundry.vercel.app/",
     siteName: "Brihaspati Non-Ferrous Metal Foundry",
     images: [
