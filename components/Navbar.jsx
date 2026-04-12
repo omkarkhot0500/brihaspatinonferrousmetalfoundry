@@ -22,7 +22,7 @@ className="h-16 sm:h-18 md:h-20 w-auto object-contain"/>
         </Link>
 
         {/* ================= DESKTOP NAV ================= */}
-        <nav className="hidden md:flex items-center gap-6 text-gray-700 font-medium">
+        <nav className="hidden lg:flex items-center gap-3 lg:gap-6 text-gray-700 font-medium whitespace-nowrap">
           <Link href="/" className="hover:text-amber-500">
             Home
           </Link>
@@ -146,7 +146,7 @@ className="h-16 sm:h-18 md:h-20 w-auto object-contain"/>
 
         {/* ================= MOBILE TOGGLE ================= */}
         <button
-          className="md:hidden"
+          className="lg:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
