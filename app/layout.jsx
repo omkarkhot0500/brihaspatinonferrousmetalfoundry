@@ -8,7 +8,7 @@ import { constructMetadata } from "@/lib/metadata";
 export const metadata = constructMetadata();
 
 export default function RootLayout({ children }) {
-  const schemaData = {
+  const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Brihaspati Cast Pvt. Ltd.",
@@ -32,12 +32,23 @@ export default function RootLayout({ children }) {
     "areaServed": "Kittur, Belagavi"
   };
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Brihaspati Cast",
+    "url": "https://www.brihaspatialloys.in"
+  };
+
   return (
     <html lang="en">
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body>
