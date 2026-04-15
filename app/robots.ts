@@ -20,6 +20,6 @@ export default function robots() {
         ]
       }
     ],
-    sitemap: "https://www.brihaspatialloys.in/sitemap.xml"
+    sitemap: "https://brihaspatialloys.in/sitemap.xml"
   };
 }

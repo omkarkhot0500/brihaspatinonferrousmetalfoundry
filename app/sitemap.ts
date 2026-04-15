@@ -1,6 +1,6 @@
 export default function sitemap() {
-  const baseUrl = "https://www.brihaspatialloys.in";
-  
+  const baseUrl = "https://brihaspatialloys.in";
+
   return [
     {
       url: `${baseUrl}/`,

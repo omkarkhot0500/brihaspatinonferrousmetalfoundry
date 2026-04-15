@@ -9,19 +9,19 @@ export const generateMetadata = () => ({
     "industrial metal casting material"
   ],
   alternates: {
-    canonical: "https://brihaspatinonferrousmetalfoundry.vercel.app/casting-material"
+    canonical: "https://brihaspatialloys.in/casting-material"
   },
   openGraph: {
     title: "Casting Materials & Alloys | Brihaspati Non-Ferrous Metal Foundry",
     description: "Explore our range of premium casting materials including copper, bronze, and brass alloys for precision industrial applications.",
-    url: "https://brihaspatinonferrousmetalfoundry.vercel.app/casting-material",
+    url: "https://brihaspatialloys.in/casting-material",
     siteName: "Brihaspati Non-Ferrous Metal Foundry",
     images: [
       {
-        url: "/assets/CO2Casting.jpg",
+        url: "/icon.png",
         width: 1200,
         height: 630,
-        alt: "Metal Casting Process"
+        alt: "Casting Materials and Alloys"
       }
     ],
     locale: "en_IN",

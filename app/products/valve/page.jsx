@@ -6,7 +6,7 @@ export const metadata = constructMetadata({
   title: "Industrial Valve Casting Manufacturer in India",
   description: "Precision-engineered valve castings in stainless steel and copper alloys for critical pressure applications. Leading foundry in Kittur, Belagavi.",
   keywords: ["valve casting India", "butterfly valve casting manufacturer", "check valve casting", "pressure relief valve components", "Belagavi foundry"],
-  url: "https://brihaspatinonferrousmetalfoundry.vercel.app/products/valve"
+  url: "https://brihaspatialloys.in/products/valve"
 });
 
 
