@@ -12,8 +12,8 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Brihaspati Cast Pvt. Ltd.",
-    "url": "https://www.brihaspatialloys.in",
-    "logo": "https://www.brihaspatialloys.in/images/logo.png",
+    "url": "https://brihaspatialloys.in",
+    "logo": "https://brihaspatialloys.in/icon.png",
     "description": "Leading manufacturer of ferrous & non-ferrous lost wax castings and industrial components.",
     "address": {
       "@type": "PostalAddress",
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Brihaspati Cast",
-    "url": "https://www.brihaspatialloys.in"
+    "url": "https://brihaspatialloys.in"
   };
 
   return (

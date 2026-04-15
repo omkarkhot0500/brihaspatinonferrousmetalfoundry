@@ -6,7 +6,7 @@ export const metadata = constructMetadata({
   title: "No-Bake Mould Casting Manufacturer India | Brihaspati Foundry",
   description: "Specialized no-bake mould casting for large and complex industrial components. High-strength copper alloy and stainless steel castings in Belagavi, Karnataka.",
   keywords: ["no-bake mould casting", "sand casting manufacturer India", "large metal casting", "industrial components Karnataka", "precision foundry solutions"],
-  url: "https://brihaspatinonferrousmetalfoundry.vercel.app/products/NoBakeMouldCasting"
+  url: "https://brihaspatialloys.in/products/NoBakeMouldCasting"
 });
 
 export default function NoBakeMouldCasting() {
@@ -25,7 +25,7 @@ export default function NoBakeMouldCasting() {
   ];
 
   const ImageGrid = ({ images, alt }) => (
-    <MotionDiv 
+    <MotionDiv
       {...staggerContainer}
       className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
     >
@@ -53,7 +53,7 @@ export default function NoBakeMouldCasting() {
     <div className="font-sans text-gray-800 overflow-hidden">
       <header className="bg-gradient-to-r from-gray-800 to-gray-700 text-white py-6 sm:py-8 md:py-12 px-4">
         <div className="container mx-auto">
-          <MotionH1 
+          <MotionH1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center"

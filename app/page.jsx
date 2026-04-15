@@ -1,7 +1,7 @@
 import HomepageClient from "@/components/HomepageClient";
 
 export const generateMetadata = () => ({
-  title: "Copper Casting Manufacturer in Karnataka | Brihaspati Foundry",
+  title: "Brihaspati Non-Ferrous Metal Foundry | Belagavi",
   description: "Leading non-ferrous metal casting manufacturer in Kittur, Belagavi. High-quality copper, bronze & brass castings.",
   keywords: [
     "copper casting Karnataka",
@@ -12,19 +12,19 @@ export const generateMetadata = () => ({
     "Brihaspati Non-Ferrous Metal Foundry",
   ],
   alternates: {
-    canonical: "https://brihaspatinonferrousmetalfoundry.vercel.app/",
+    canonical: "https://brihaspatialloys.in/",
   },
   openGraph: {
-    title: "Copper Casting Manufacturer in Karnataka | Brihaspati Foundry",
+    title: "Brihaspati Non-Ferrous Metal Foundry | Belagavi",
     description: "Leading non-ferrous metal casting manufacturer in Kittur, Belagavi. High-quality copper, bronze & brass castings.",
-    url: "https://brihaspatinonferrousmetalfoundry.vercel.app/",
+    url: "https://brihaspatialloys.in/",
     siteName: "Brihaspati Non-Ferrous Metal Foundry",
     images: [
       {
-        url: "/assets/CO2Casting.jpg",
+        url: "/icon.png",
         width: 1200,
         height: 630,
-        alt: "Metal Casting Process",
+        alt: "Brihaspati Non-Ferrous Metal Foundry Logo",
       },
     ],
     locale: "en_IN",

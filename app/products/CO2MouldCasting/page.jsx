@@ -6,7 +6,7 @@ export const metadata = constructMetadata({
   title: "CO2 Mould Casting Manufacturer Karnataka | Brihaspati Foundry",
   description: "Advanced CO2 sand casting solutions with excellent surface finish and dimensional accuracy. Leading manufacturer of non-ferrous and stainless steel castings in India.",
   keywords: ["CO2 sand casting", "CO2 mould manufacturer India", "precision sand casting Karnataka", "industrial casting solutions", "Brihaspati foundry"],
-  url: "https://brihaspatinonferrousmetalfoundry.vercel.app/products/CO2MouldCasting"
+  url: "https://brihaspatialloys.in/products/CO2MouldCasting"
 });
 
 export default function CO2MouldCasting() {

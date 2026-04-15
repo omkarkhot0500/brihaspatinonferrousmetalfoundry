@@ -10,19 +10,19 @@ export const generateMetadata = () => ({
     "Brihaspati Foundry products"
   ],
   alternates: {
-    canonical: "https://brihaspatinonferrousmetalfoundry.vercel.app/products"
+    canonical: "https://brihaspatialloys.in/products"
   },
   openGraph: {
     title: "Precision Metal Casting Products | Brihaspati Foundry",
     description: "Explore our range of high-quality casting products including valve casting, centrifugal casting, and custom engineering solutions.",
-    url: "https://brihaspatinonferrousmetalfoundry.vercel.app/products",
+    url: "https://brihaspatialloys.in/products",
     siteName: "Brihaspati Non-Ferrous Metal Foundry",
     images: [
       {
-        url: "/assets/CO2Casting.jpg",
+        url: "/icon.png",
         width: 1200,
         height: 630,
-        alt: "Metal Casting Process"
+        alt: "Precision Metal Casting"
       }
     ],
     locale: "en_IN",

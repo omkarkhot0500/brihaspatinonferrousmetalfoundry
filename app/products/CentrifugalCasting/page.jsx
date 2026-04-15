@@ -6,7 +6,7 @@ export const metadata = constructMetadata({
   title: "Centrifugal Casting Manufacturer in India | Brihaspati Foundry",
   description: "High-integrity centrifugal castings with superior density and mechanical properties. Specialized in copper alloy and stainless steel centrifugal casting in Kittur, Belagavi.",
   keywords: ["centrifugal casting India", "vertical centrifugal casting", "industrial sleeve manufacturer", "copper alloy centrifugal casting", "Belagavi metal foundry"],
-  url: "https://brihaspatinonferrousmetalfoundry.vercel.app/products/CentrifugalCasting"
+  url: "https://brihaspatialloys.in/products/CentrifugalCasting"
 });
 
 export default function CentrifugalCasting() {
