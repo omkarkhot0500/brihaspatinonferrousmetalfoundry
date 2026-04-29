@@ -7,7 +7,7 @@ This is a modern Next.js conversion of the Brihaspati Non-Ferrous Metal Foundry 
 ### Tech Stack
 - **Framework**: Next.js 15 (Latest Stable)
 - **UI Library**: React 18
-- **Styling**: Tailwind CSS 3.4
+- **Styling**: Tailwind CSS 
 - **Routing**: Next.js App Router
 - **Components**: Functional components with hooks
 - **Icons**: Lucide React, React Icons
