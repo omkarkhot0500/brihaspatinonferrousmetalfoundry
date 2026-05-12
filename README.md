@@ -12,7 +12,7 @@ This is a modern Next.js conversion of the Brihaspati Non-Ferrous Metal Foundry 
 - **Components**: Functional components with hooks
 - **Icons**: Lucide React, React Icons
 - **Animations**: Framer Motion
-- **Email**: EmailJS for contact form submissions
+- **Email**: EmailJS for contact form submissions.
 - **Notifications**: React Hot Toast
 - **Deployment**: Optimized for Vercel (and other hosting platforms)
 
