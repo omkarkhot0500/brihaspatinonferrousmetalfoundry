@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This is a modern Next.js conversion of the Brihaspati Non-Ferrous Metal Foundry website. The project showcases a comprehensive metal casting and foundry business with detailed product information, certifications, company details, and contact capabilities
+This is a modern Next.js conversion of the Brihaspati Non-Ferrous Metal Foundry website. The project showcases a comprehensive metal casting and foundry business with detailed product information, certifications, company details, and contact capabilities.
 
 ### Tech Stack
 - **Framework**: Next.js 15 (Latest Stable)
