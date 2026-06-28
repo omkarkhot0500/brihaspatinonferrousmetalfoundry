@@ -5,11 +5,11 @@
 This is a modern Next.js conversion of the Brihaspati Non-Ferrous Metal Foundry website. The project showcases a comprehensive metal casting and foundry business with detailed product information, certifications, company details, and contact capabilities.
 
 ### Tech Stack
-- **Framework**: Next.js 15 (Latest Stable)
+- **Framework**: Next.js 15 (Latest Stable).
 - **UI Library**: React 18.
 - **Styling**: Tailwind CSS.
-- **Routing**: Next.js App Router
-- **Components**: Functional components with hooks
+- **Routing**: Next.js App Router.
+- **Components**: Functional components with hooks.
 - **Icons**: Lucide React, React Icons
 - **Animations**: Framer Motion
 - **Email**: EmailJS for contact form submissions.
