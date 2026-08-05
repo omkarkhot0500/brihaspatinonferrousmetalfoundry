@@ -1,15 +1,26 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ChevronRight, Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   // Mobile states ONLY
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileCompanyOpen, setMobileCompanyOpen] = useState(false);
   const [mobileMetalOpen, setMobileMetalOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+
+  // Close mobile drawer and reset submenus on navigation
+  useEffect(() => {
+    setMobileOpen(false);
+    setMobileCompanyOpen(false);
+    setMobileMetalOpen(false);
+    setMobileProductsOpen(false);
+  }, [pathname]);
 
   return (
 <header className="sticky top-0 z-50 bg-white shadow-md py-2 sm:py-3 md:py-4">
