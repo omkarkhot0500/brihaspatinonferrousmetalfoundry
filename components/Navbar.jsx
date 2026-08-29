@@ -212,7 +212,14 @@ const Navbar = () => {
       {/* ================= MOBILE MENU ================= */}
       {mobileOpen && (
         <div className="lg:hidden bg-white border-t">
-          <nav className="flex flex-col px-4 py-4 gap-3 text-gray-700 font-medium">
+          <nav
+            className="flex flex-col px-4 py-4 gap-3 text-gray-700 font-medium"
+            onClick={(e) => {
+              if (e.target.closest("a")) {
+                closeMobileMenu();
+              }
+            }}
+          >
 
             {/* Home */}
             <Link href="/" onClick={closeMobileMenu}>
