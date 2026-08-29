@@ -212,25 +212,12 @@ const Navbar = () => {
       {/* ================= MOBILE MENU ================= */}
       {mobileOpen && (
         <div className="lg:hidden bg-white border-t">
-          <nav
-            className="flex flex-col px-4 py-4 gap-3 text-gray-700 font-medium"
-            onClick={(e) => {
-              if (e.target.closest("a")) {
-                closeMobileMenu();
-              }
-            }}
-            onTouchEnd={(e) => {
-              if (e.target.closest("a")) {
-                closeMobileMenu();
-              }
-            }}
-          >
+          <nav className="flex flex-col px-4 py-4 gap-3 text-gray-700 font-medium">
 
             {/* Home */}
             <Link
               href="/"
               onClick={closeMobileMenu}
-              onTouchEnd={closeMobileMenu}
             >
               Home
             </Link>
@@ -255,7 +242,6 @@ const Navbar = () => {
                 <Link
                   href="/about"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 hover:text-amber-500"
                 >
                   Our Process
@@ -264,7 +250,6 @@ const Navbar = () => {
                 <Link
                   href="/company/quality-control"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 hover:text-amber-500"
                 >
                   Quality Control
@@ -273,7 +258,6 @@ const Navbar = () => {
                 <Link
                   href="/company/mission-vision"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 hover:text-amber-500"
                 >
                   Mission & Vision
@@ -301,7 +285,6 @@ const Navbar = () => {
                 <Link
                   href="/casting-material"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 font-semibold hover:text-amber-500"
                 >
                   All Casting Materials
@@ -310,7 +293,6 @@ const Navbar = () => {
                 <Link
                   href="/ferrous/steel"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 hover:text-amber-500"
                 >
                   Stainless Steel Casting
@@ -319,7 +301,6 @@ const Navbar = () => {
                 <Link
                   href="/ferrous/nicle"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 hover:text-amber-500"
                 >
                   Nickel Alloy Casting
@@ -328,7 +309,6 @@ const Navbar = () => {
                 <Link
                   href="/non-ferrous/copper"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 hover:text-amber-500"
                 >
                   Copper Alloy Casting
@@ -337,7 +317,6 @@ const Navbar = () => {
                 <Link
                   href="/non-ferrous/bronze"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 hover:text-amber-500"
                 >
                   Bronze Casting
@@ -365,7 +344,6 @@ const Navbar = () => {
                 <Link
                   href="/products"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 font-semibold hover:text-amber-500"
                 >
                   All Products
@@ -374,7 +352,6 @@ const Navbar = () => {
                 <Link
                   href="/products/valve"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 hover:text-amber-500"
                 >
                   Valve Casting
@@ -383,7 +360,6 @@ const Navbar = () => {
                 <Link
                   href="/products/generalengineeringcasting"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 hover:text-amber-500"
                 >
                   General Engineering Casting
@@ -392,7 +368,6 @@ const Navbar = () => {
                 <Link
                   href="/products/CentrifugalCasting"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 hover:text-amber-500"
                 >
                   Centrifugal Casting
@@ -401,7 +376,6 @@ const Navbar = () => {
                 <Link
                   href="/products/GravityDieCasting"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 hover:text-amber-500"
                 >
                   Gravity Die Casting
@@ -410,7 +384,6 @@ const Navbar = () => {
                 <Link
                   href="/products/ShellMouldCasting"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 hover:text-amber-500"
                 >
                   Shell Mould Casting
@@ -419,7 +392,6 @@ const Navbar = () => {
                 <Link
                   href="/products/CO2MouldCasting"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 hover:text-amber-500"
                 >
                   CO2 Mould Casting
@@ -428,7 +400,6 @@ const Navbar = () => {
                 <Link
                   href="/products/NoBakeMouldCasting"
                   onClick={closeMobileMenu}
-                  onTouchEnd={closeMobileMenu}
                   className="py-1 hover:text-amber-500"
                 >
                   No Bake Mould Casting
@@ -440,7 +411,6 @@ const Navbar = () => {
             <Link
               href="/certification"
               onClick={closeMobileMenu}
-              onTouchEnd={closeMobileMenu}
             >
               Certification
             </Link>
@@ -449,7 +419,6 @@ const Navbar = () => {
             <Link
               href="/contact"
               onClick={closeMobileMenu}
-              onTouchEnd={closeMobileMenu}
               className="mt-2 rounded bg-amber-500 px-4 py-2 text-white text-center block"
             >
               Contact Us
