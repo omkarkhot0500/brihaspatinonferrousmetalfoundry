@@ -219,17 +219,26 @@ const Navbar = () => {
                 closeMobileMenu();
               }
             }}
+            onTouchEnd={(e) => {
+              if (e.target.closest("a")) {
+                closeMobileMenu();
+              }
+            }}
           >
 
             {/* Home */}
-            <Link href="/" onClick={closeMobileMenu}>
+            <Link
+              href="/"
+              onClick={closeMobileMenu}
+              onTouchEnd={closeMobileMenu}
+            >
               Home
             </Link>
 
             {/* ================= COMPANY ================= */}
             <button
               onClick={() => setMobileCompanyOpen((prev) => !prev)}
-              className="flex justify-between items-center text-left"
+              className="flex justify-between items-center text-left py-1"
               aria-label="Toggle company menu"
               aria-expanded={mobileCompanyOpen}
             >
@@ -242,14 +251,21 @@ const Navbar = () => {
             </button>
 
             {mobileCompanyOpen && (
-              <div className="ml-4 flex flex-col gap-2 text-sm">
-                <Link href="/about" onClick={closeMobileMenu}>
+              <div className="ml-4 flex flex-col gap-2 text-sm border-l-2 border-amber-500 pl-3 py-1">
+                <Link
+                  href="/about"
+                  onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 hover:text-amber-500"
+                >
                   Our Process
                 </Link>
 
                 <Link
                   href="/company/quality-control"
                   onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 hover:text-amber-500"
                 >
                   Quality Control
                 </Link>
@@ -257,6 +273,8 @@ const Navbar = () => {
                 <Link
                   href="/company/mission-vision"
                   onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 hover:text-amber-500"
                 >
                   Mission & Vision
                 </Link>
@@ -266,7 +284,7 @@ const Navbar = () => {
             {/* ================= CASTING MATERIALS ================= */}
             <button
               onClick={() => setMobileMetalOpen((prev) => !prev)}
-              className="flex justify-between items-center text-left"
+              className="flex justify-between items-center text-left py-1"
               aria-label="Toggle casting materials menu"
               aria-expanded={mobileMetalOpen}
             >
@@ -279,10 +297,21 @@ const Navbar = () => {
             </button>
 
             {mobileMetalOpen && (
-              <div className="ml-4 flex flex-col gap-2 text-sm">
+              <div className="ml-4 flex flex-col gap-2 text-sm border-l-2 border-amber-500 pl-3 py-1">
+                <Link
+                  href="/casting-material"
+                  onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 font-semibold hover:text-amber-500"
+                >
+                  All Casting Materials
+                </Link>
+
                 <Link
                   href="/ferrous/steel"
                   onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 hover:text-amber-500"
                 >
                   Stainless Steel Casting
                 </Link>
@@ -290,6 +319,8 @@ const Navbar = () => {
                 <Link
                   href="/ferrous/nicle"
                   onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 hover:text-amber-500"
                 >
                   Nickel Alloy Casting
                 </Link>
@@ -297,6 +328,8 @@ const Navbar = () => {
                 <Link
                   href="/non-ferrous/copper"
                   onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 hover:text-amber-500"
                 >
                   Copper Alloy Casting
                 </Link>
@@ -304,6 +337,8 @@ const Navbar = () => {
                 <Link
                   href="/non-ferrous/bronze"
                   onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 hover:text-amber-500"
                 >
                   Bronze Casting
                 </Link>
@@ -313,7 +348,7 @@ const Navbar = () => {
             {/* ================= PRODUCTS ================= */}
             <button
               onClick={() => setMobileProductsOpen((prev) => !prev)}
-              className="flex justify-between items-center text-left"
+              className="flex justify-between items-center text-left py-1"
               aria-label="Toggle products menu"
               aria-expanded={mobileProductsOpen}
             >
@@ -326,10 +361,21 @@ const Navbar = () => {
             </button>
 
             {mobileProductsOpen && (
-              <div className="ml-4 flex flex-col gap-2 text-sm">
+              <div className="ml-4 flex flex-col gap-2 text-sm border-l-2 border-amber-500 pl-3 py-1">
+                <Link
+                  href="/products"
+                  onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 font-semibold hover:text-amber-500"
+                >
+                  All Products
+                </Link>
+
                 <Link
                   href="/products/valve"
                   onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 hover:text-amber-500"
                 >
                   Valve Casting
                 </Link>
@@ -337,6 +383,8 @@ const Navbar = () => {
                 <Link
                   href="/products/generalengineeringcasting"
                   onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 hover:text-amber-500"
                 >
                   General Engineering Casting
                 </Link>
@@ -344,6 +392,8 @@ const Navbar = () => {
                 <Link
                   href="/products/CentrifugalCasting"
                   onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 hover:text-amber-500"
                 >
                   Centrifugal Casting
                 </Link>
@@ -351,6 +401,8 @@ const Navbar = () => {
                 <Link
                   href="/products/GravityDieCasting"
                   onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 hover:text-amber-500"
                 >
                   Gravity Die Casting
                 </Link>
@@ -358,6 +410,8 @@ const Navbar = () => {
                 <Link
                   href="/products/ShellMouldCasting"
                   onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 hover:text-amber-500"
                 >
                   Shell Mould Casting
                 </Link>
@@ -365,6 +419,8 @@ const Navbar = () => {
                 <Link
                   href="/products/CO2MouldCasting"
                   onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 hover:text-amber-500"
                 >
                   CO2 Mould Casting
                 </Link>
@@ -372,6 +428,8 @@ const Navbar = () => {
                 <Link
                   href="/products/NoBakeMouldCasting"
                   onClick={closeMobileMenu}
+                  onTouchEnd={closeMobileMenu}
+                  className="py-1 hover:text-amber-500"
                 >
                   No Bake Mould Casting
                 </Link>
@@ -382,6 +440,7 @@ const Navbar = () => {
             <Link
               href="/certification"
               onClick={closeMobileMenu}
+              onTouchEnd={closeMobileMenu}
             >
               Certification
             </Link>
@@ -390,6 +449,7 @@ const Navbar = () => {
             <Link
               href="/contact"
               onClick={closeMobileMenu}
+              onTouchEnd={closeMobileMenu}
               className="mt-2 rounded bg-amber-500 px-4 py-2 text-white text-center block"
             >
               Contact Us
